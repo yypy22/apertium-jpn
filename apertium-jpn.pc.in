@@ -1,0 +1,8 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+srcdir=@datarootdir@/apertium/apertium-jpn
+
+Name: apertium-jpn
+Description: Finite-state morphological transducer and constraint grammar for Japanese 
+Version: @VERSION@
+

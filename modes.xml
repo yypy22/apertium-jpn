@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="jpn-twol" install="yes">
+    <pipeline>
+      <program name="hfst-strings2fst -S"/>
+      <program name="hfst-compose-intersect">
+        <file name=".deps/jpn.twol.hfst"/>
+      </program>
+      <program name="hfst-fst2strings"/>
+    </pipeline>
+  </mode>
+
+  <mode name="jpn-morph" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="jpn.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="jpn-lexc" install="yes">
+    <pipeline>
+      <program name="hfst-lookup">
+        <file name=".deps/jpn.LR.lexc.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="jpn-gener" install="yes">
+    <pipeline>
+      <program name="lt-proc -g">
+        <file name="jpn.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="jpn-tagger" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="jpn.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="jpn.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="jpn-disam" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="jpn.automorf.bin"/>
+      </program>
+      <program name="cg-conv -a"/>
+      <program name="vislcg3 --trace --grammar">
+        <file name="jpn.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+</modes>
+
