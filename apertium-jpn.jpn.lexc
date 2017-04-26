@@ -4,6 +4,46 @@ Multichar_Symbols
 
 ! Part of speech categories
 %<n%>   ! Noun
+%<v%>	! Verb
+%<adj%> ! Adjective
+%<ij%>  ! Interjection
+%<prn%>  ! pronoun
+
+! Particles
+%<top%> ! Topic 1
+%<nom%>  ! Nominative
+%<gen%>  ! Genitive
+%<acc%>  ! Accusative
+%<dat%>  ! Dative
+%<quot%> ! Quotative
+%<all%> ! Allative 
+%<abl%>  ! Ablative
+%<ins%>  ! Instrumental
+%<com%>  ! Comitative
+%<mod%>  ! For final particles
+%<abs%>  ! For things that don't have postpositions
+
+! -alisers
+%<nz%>  ! Nominaliser
+%<az%>  ! Adverbaliser
+%<vz%>  ! Verbaliser
+
+! Pronoun-related
+%<p1%>   ! First person
+%<p2%>   ! Second person
+%<p3%>   ! Third person
+
+! verb suffixes
+%<vol%>  ! Volitional
+%<neg%>  ! Negative
+%<past%> ! Past
+%<imp%>  ! Imperative
+%<npst%> ! Non-past
+!conditional?
+%<caus%>  ! Causative
+%<pot%>   ! Potential
+%<pass%>  ! Passive
+
 
 ! Number morphology
 %<pl%>  ! Plural
