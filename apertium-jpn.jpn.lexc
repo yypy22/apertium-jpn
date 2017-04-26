@@ -7,7 +7,8 @@ Multichar_Symbols
 %<v%>	! Verb
 %<adj%> ! Adjective
 %<ij%>  ! Interjection
-%<prn%>  ! pronoun
+%<prn%> ! Pronoun
+%<cop%>	! Copula
 
 ! Particles
 %<top%> ! Topic 1
@@ -44,10 +45,13 @@ Multichar_Symbols
 %<pot%>   ! Potential
 %<pass%>  ! Passive
 
-
 ! Number morphology
 %<pl%>  ! Plural
 %<sg%>  ! Singular
+
+! Formality
+%<pol%>	! Polite
+%<ifml%>! Informal
 
 ! Other symbols
 %>      ! Morpheme boundary
@@ -61,11 +65,28 @@ LEXICON Root
 
 NounRoot ;
 
+VerbRoot ;
+ 
+AdjRoot ;
+ 
+Pronouns ;
 
-LEXICON RegNounInfl
+Conjunctions ;
 
-%<n%>%<sg%>: # ;
-%<n%>%<pl%>:%>s # ;
+Interjections ;
+
+
+LEXICON NounPl
+
+%<n%>%<sg%>: NounInfl ;
+%<n%>%<pl%>:%>たち NounInfl ;
+
+LEXICON NounInfl
+%<pol%>%<cop%>:%>です # ;
+%<ifml%>%<cop%>:%>だ # ;
+%<pol%>%<past%>:%>でした # ;
+%<ifml%>%<past%>:%>だった # ;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -74,7 +95,7 @@ LEXICON RegNounInfl
 
 LEXICON NounRoot
 
-house:house RegNounInfl ; ! A noun
+house:house NounPl ; ! A noun
 
 
 
