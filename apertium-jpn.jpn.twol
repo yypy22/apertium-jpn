@@ -1,12 +1,22 @@
 Alphabet
- A B Ç D E Ä F G H I J Ž K L M N Ň O Ö P R S Ş T U Ü W Y Ý Z
- a b ç d e ä f g h i j ž k l m n ň o ö p r s ş t u ü w y ý z
+あ い う　え　お ゃ ゅ　ょ  っ ー  。
+か き く け　が ぎ ぐ げ　さ し す せ　そ ざ じ ず ぜ　ぞ た と だ　づ ど な に ぬ ね　の　は ひ へ　ほ ぱ ぴ ぷ ぺ　ぽ　ば び ぶ べ　ま み む め　も　ら り る れ　ろ　や ゆ よ　わ ふ
+ち つ ん て で
+ご お ぼ れ て こ
+
  %{A%}:a %>:0  ;
 
 Sets
 
-Vowel = A E Ä I O Ö U Ü Y Ý 
-        a e ä i o ö u ü y ý ;
+Arow = あ か が さ ざ た だ な は ぱ ば ま ら や わ ゃ ;
+
+Irow = い　き ぎ し じ に ひ び ぴ み り ;
+
+Urow = う　く　ぐ　す　ず　つ　づ　ぬ　ふ　ぷ　ぶ　む　る　ゅ;
+
+Erow = え　け　げ　せ　ぜ　て　で　ね　へ　ぺ　べ　め　れ　;
+
+Orow = お　こ ご　そ　ぞ　と　ど　の　ほ　ぼ　ぽ　も　ろ　ょ ;
 
 Rules 
 
