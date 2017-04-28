@@ -6,6 +6,7 @@ Multichar_Symbols
 %<n%>   ! Noun
 %<v%>	! Verb
 %<adj%> ! Adjective
+%<cnjcoo%> ! Coordinating conjunction
 %<ij%>  ! Interjection
 %<prn%> ! Pronoun
 %<cop%>	! Copula
@@ -21,6 +22,7 @@ Multichar_Symbols
 %<abl%>  ! Ablative
 %<ins%>  ! Instrumental
 %<com%>  ! Comitative
+%<term%> ! Terminative
 %<mod%>  ! For final particles
 %<abs%>  ! For things that don't have postpositions
 
@@ -33,6 +35,7 @@ Multichar_Symbols
 %<p1%>   ! First person
 %<p2%>   ! Second person
 %<p3%>   ! Third person
+%<pers%> ! Personal
 
 ! verb suffixes
 %<vol%>  ! Volitional
@@ -76,16 +79,47 @@ Conjunctions ;
 Interjections ;
 
 
-LEXICON NounPl
+LEXICON NounTag
+%<n%>: NounPl ;
 
-%<n%>%<sg%>: NounInfl ;
-%<n%>%<pl%>:%>たち NounInfl ;
+LEXICON NounPl
+%<sg%>: NounInfl ;
+%<pl%>:%>たち NounInfl ;
+
+LEXICON iAdj
+%<adj%>%<npst%>:%>い #;
+
+LEXICON naAdjTag
+%<adj%>: NounInfl ;
+%<adj%>:%>な # ;
 
 LEXICON NounInfl
-%<pol%>%<cop%>:%>です # ;
+%<pol%>%<cop%>:%>です FinPart ;
 %<ifml%>%<cop%>:%>だ # ;
-%<pol%>%<past%>:%>でした # ;
+%<pol%>%<past%>:%>でした FinPart ;
 %<ifml%>%<past%>:%>だった # ;
+PostPos ;
+
+LEXICON PostPos
+%<top%>:%>は # ;
+%<nom%>:%>が # ;
+%<gen%>:%>の # ;
+%<acc%>:%>を # ;
+%<dat%>:%>に # ;
+%<quot%>:%>と # ;
+%<abl%>:%>から # ;
+%<ins%>:%>で # ;
+%<all%>:%>へ # ; 
+%<term%>:%>まで # ;   
+! mo
+! ya
+%<abs%>: # ; 
+
+LEXICON FinPart
+%+わ%<mod%>:%>わ # ; !
+%+よ%<mod%>:%>よ # ; ! Informing the hearer
+%+ね%<mod%>:%>ね # ; ! Emphasis
+%+か%<mod%>:%>か # ; ! Question
 
 
 
@@ -94,9 +128,36 @@ LEXICON NounInfl
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NounRoot
+家:家 NounTag ; ! house
+広島:広島 NounTag ; ! Hiroshima
+広島市:広島市 NounTag ; ! Hiroshima city
+原爆:原爆 NounTag ; ! atomic
+原爆ドーム:原爆ドーム NounTag ; ! atom bomb dome
+原爆爆弾:原爆爆弾 NounTag ; ! atomic bomb
+平和:平和 NounTag ; ! peace
+公園:公園 NounTag ; ! park
+世界:世界 NounTag ; ! world
 
-house:house NounPl ; ! A noun
 
+LEXICON VerbRoot 
+食べる:食べ # ; ! eat
+落とす:落とす # ; ! drop
+含まる:含まる # ; ! include
+向ける:向け # ; ! turn
+残る:残る # ; ! remain
+ 
+
+LEXICON AdjRoot 
+静か:静か naAdjTag ; ! quiet
+多い:多 iAdj ; ! many
+
+LEXICON Pronouns 
+私%<prn%>%<pers%>%<p1%>:私 NounPl ;
+
+LEXICON Conjunctions 
+しかし%<cnjcoo%>:しかし # ; ! however
+
+!LEXICON Interjections 
 
 
 ! Resources:
