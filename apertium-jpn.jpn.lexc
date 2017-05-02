@@ -157,15 +157,23 @@ LEXICON POST-DIGITS
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NounRoot
-家:家 NounTag ; ! house
+家:家 NounTag ; ! house うち
 広島:広島 NounTag ; ! Hiroshima
 広島市:広島市 NounTag ; ! Hiroshima city
-原爆:原爆 NounTag ; ! atomic
+原爆:原爆 NounTag ; ! atomic げんばく
 原爆ドーム:原爆ドーム NounTag ; ! atom bomb dome
-原爆爆弾:原爆爆弾 NounTag ; ! atomic bomb
-平和:平和 NounTag ; ! peace
-公園:公園 NounTag ; ! park
-世界:世界 NounTag ; ! world
+原爆爆弾:原爆爆弾 NounTag ; ! atomic bomb げんばくばくだん
+平和:平和 NounTag ; ! peace へいわ
+公園:公園 NounTag ; ! park こうえん
+世界:世界 NounTag ; ! world せかい
+グレープフルーツ:グレープフルーツ NounTag ; ! grapefruit
+ジュース:ジュース NounTag ; ! juice
+マーマレード:マーマレード NounTag ; ! marmalade
+ジャム:ジャム NounTag ; ! jam
+土:土 NounTag ; ! soil つち
+フラノクマリン:フラノクマリン NounTag ; ! furanocoumarin
+食用:食用 NounTag ; ! edible しょくよう
+海外:かいがい NounTag ; ! foreign/overseas かいがい 
 
 
 LEXICON VerbRoot 
@@ -174,6 +182,7 @@ LEXICON VerbRoot
 含まる:含まる # ; ! include
 向ける:向け # ; ! turn
 残る:残る # ; ! remain
+呼ぶ:よぶ # ; ! call (something a name/yell out) よぶ
  
 
 LEXICON AdjRoot 
