@@ -10,6 +10,7 @@ Multichar_Symbols
 %<ij%>  ! Interjection
 %<prn%> ! Pronoun
 %<cop%>	! Copula
+%<num%> ! Numeral
 
 ! Particles
 %<top%> ! Topic 1
@@ -76,7 +77,9 @@ Pronouns ;
 
 Conjunctions ;
 
-Interjections ;
+!Interjections ;
+
+Digits ;
 
 
 LEXICON NounTag
@@ -121,6 +124,32 @@ LEXICON FinPart
 %+ね%<mod%>:%>ね # ; ! Emphasis
 %+か%<mod%>:%>か # ; ! Question
 
+LEXICON LOOP
+%,:%, DIGITLEX ;
+%.:%. DIGITLEX ;
+%,:%, POST-DIGITS ;
+%.:%. POST-DIGITS ;
+      DIGITLEX ;
+      POST-DIGITS ;
+
+LEXICON DIGITLEX
+%0:%0 LOOP ;
+1:1   LOOP ;
+2:2   LOOP ;
+3:3   LOOP ;
+4:4   LOOP ;
+5:5   LOOP ;
+6:6   LOOP ;
+7:7   LOOP ;
+8:8   LOOP ;
+9:9   LOOP ;
+
+LEXICON POST-DIGITS
+%<num%>: # ;
+年%<num%>:年 # ;
+月%<num%>:月 # ;
+日%<num%>:日 # ;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -158,6 +187,9 @@ LEXICON Conjunctions
 しかし%<cnjcoo%>:しかし # ; ! however
 
 !LEXICON Interjections 
+
+LEXICON Digits
+DIGITLEX ;
 
 
 ! Resources:
