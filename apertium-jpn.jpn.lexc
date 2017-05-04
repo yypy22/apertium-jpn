@@ -146,9 +146,11 @@ LEXICON DIGITLEX
 
 LEXICON POST-DIGITS
 %<num%>: # ;
-年%<num%>:年 # ;
-月%<num%>:月 # ;
-日%<num%>:日 # ;
+年%<num%>:年 # ; ! year ねん
+月%<num%>:月 # ; ! month がつ
+日%<num%>:日 # ; ! day にち
+時%<num%>:時 # ; ! hour じ
+分%<num%>:分 # ; ! minute ぶん
 
 
 
