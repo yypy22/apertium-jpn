@@ -4,6 +4,7 @@ Multichar_Symbols
 
 ! Part of speech categories
 %<n%>   ! Noun
+%<pn%>  ! Proper noun
 %<v%>	! Verb
 %<adj%> ! Adjective
 %<cnjcoo%> ! Coordinating conjunction
@@ -11,6 +12,10 @@ Multichar_Symbols
 %<prn%> ! Pronoun
 %<cop%>	! Copula
 %<num%> ! Numeral
+
+%<topn%> ! toponym (should probably be changed?)
+
+%<attr%> ! for na adjectives
 
 ! Particles
 %<top%> ! Topic 1
@@ -69,6 +74,8 @@ LEXICON Root
 
 NounRoot ;
 
+ProperNouns ;
+
 VerbRoot ;
  
 AdjRoot ;
@@ -85,22 +92,32 @@ Digits ;
 LEXICON NounTag
 %<n%>: NounPl ;
 
+LEXICON NPTop
+%<pn%>%<topn%>: NounInfl ;
+%<pn%>%<topn%>:人 NounInfl ; ! person (effectively, citizen) じん
+%<pn%>%<topn%>:軍 NounInfl ; ! military ぐん
+%<pn%>%<topn%>:国内 NounInfl ; ! domestic こくない
+
 LEXICON NounPl
 %<sg%>: NounInfl ;
 %<pl%>:%>たち NounInfl ;
 
 LEXICON iAdj
 %<adj%>%<npst%>:%>い #;
+%<adj%>%+です%<cop%>%<pol%>%<npst%>:%>いです FinPart ;
+%<adj%>%<ifml%>%<past%>:%>かった FinPart ;
+%<adj%>%<ifml%>%<npst%>:%>くない FinPart ;
+%<adj%>%<ifml%>%<past%>:%>くなかった FinPart ;
 
 LEXICON naAdjTag
 %<adj%>: NounInfl ;
-%<adj%>:%>な # ;
+%<adj%>%<attr%>:%>な # ;
 
 LEXICON NounInfl
-%<pol%>%<cop%>:%>です FinPart ;
-%<ifml%>%<cop%>:%>だ # ;
-%<pol%>%<past%>:%>でした FinPart ;
-%<ifml%>%<past%>:%>だった # ;
+%<cop%>%<pol%>%<npst%>:%>です FinPart ;
+%<cop%>%<ifml%>%<npst%>:%>だ FinPart ;
+%<pol%>%<cop%>%<past%>:%>でした FinPart ;
+%<ifml%>%<cop%>%<past%>:%>だった FinPart ;
 PostPos ;
 
 LEXICON PostPos
@@ -177,6 +194,9 @@ LEXICON NounRoot
 食用:食用 NounTag ; ! edible しょくよう
 海外:かいがい NounTag ; ! foreign/overseas かいがい 
 
+LEXICON ProperNouns
+日本:日本 NPTop ; ! Japan
+アメリカ:アメリカ NPTop ; ! America
 
 LEXICON VerbRoot 
 食べる:食べ # ; ! eat
@@ -184,7 +204,7 @@ LEXICON VerbRoot
 含まる:含まる # ; ! include
 向ける:向け # ; ! turn
 残る:残る # ; ! remain
-呼ぶ:よぶ # ; ! call (something a name/yell out) よぶ
+呼ぶ:呼ぶ # ; ! call (something a name/yell out) よぶ
  
 
 LEXICON AdjRoot 
