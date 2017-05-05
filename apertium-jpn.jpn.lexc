@@ -13,12 +13,12 @@ Multichar_Symbols
 %<cop%>	! Copula
 %<num%> ! Numeral
 
-%<topn%> ! toponym (should probably be changed?)
+%<top%> ! toponym (should probably be changed?)
 
 %<attr%> ! for na adjectives
 
 ! Particles
-%<top%> ! Topic 1
+%<tpc%> ! Topic
 %<nom%>  ! Nominative
 %<gen%>  ! Genitive
 %<acc%>  ! Accusative
@@ -93,10 +93,10 @@ LEXICON NounTag
 %<n%>: NounPl ;
 
 LEXICON NPTop
-%<pn%>%<topn%>: NounInfl ;
-%<pn%>%<topn%>:人 NounInfl ; ! person (effectively, citizen) じん
-%<pn%>%<topn%>:軍 NounInfl ; ! military ぐん
-%<pn%>%<topn%>:国内 NounInfl ; ! domestic こくない
+%<pn%>%<top%>: NounInfl ;
+%<pn%>%<top%>%+人:%>人 NounInfl ; ! person (effectively, citizen) じん
+%<pn%>%<top%>%+軍:%>軍 NounInfl ; ! military ぐん
+%<pn%>%<top%>%+国内:%>国内 NounInfl ; ! domestic こくない
 
 LEXICON NounPl
 %<sg%>: NounInfl ;
@@ -121,7 +121,7 @@ LEXICON NounInfl
 PostPos ;
 
 LEXICON PostPos
-%<top%>:%>は # ;
+%<tpc%>:%>は # ;
 %<nom%>:%>が # ;
 %<gen%>:%>の # ;
 %<acc%>:%>を # ;
