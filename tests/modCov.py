@@ -97,6 +97,9 @@ if __name__ == '__main__':
     corpusPath = getFile(args.corpusUri)
     known, total, unknownTokens = getStats(corpusPath, args.numUnknown)
 
-    print('Total: %s' % total)
-    print('Known: %s' % known)
+    print(corpusPath)
     print('Coverage: %.10f%%' % float(known / total * 100.0))
+'''
+    for token, count in unknownTokens:
+        print('%s\t%s' % (count, token.decode('utf-8', errors='ignore').strip()))
+'''

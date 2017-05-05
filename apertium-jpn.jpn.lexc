@@ -62,6 +62,12 @@ Multichar_Symbols
 %<pol%>	! Polite
 %<ifml%>! Informal
 
+!Punctuation
+%<sent%>
+%<cm%>
+%<lquot%>
+%<rquot%>
+
 ! Other symbols
 %>      ! Morpheme boundary
 
@@ -84,9 +90,13 @@ Pronouns ;
 
 Conjunctions ;
 
+Determiners ;
+
 !Interjections ;
 
 Digits ;
+
+Punctuation ;
 
 
 LEXICON NounTag
@@ -193,6 +203,8 @@ LEXICON NounRoot
 フラノクマリン:フラノクマリン NounTag ; ! furanocoumarin
 食用:食用 NounTag ; ! edible しょくよう
 海外:かいがい NounTag ; ! foreign/overseas かいがい 
+たまご:たまご NounTag ; ! Dir/LR
+卵:卵 NounTag ; ! egg
 
 LEXICON ProperNouns
 日本:日本 NPTop ; ! Japan
@@ -214,6 +226,11 @@ LEXICON AdjRoot
 LEXICON Pronouns 
 私%<prn%>%<pers%>%<p1%>:私 NounPl ;
 
+LEXICON Determiners
+この%<det%>%<dem%>:この # ; ! this
+その%<det%>%<dem%>:その # ; ! that
+あの%<det%>%<dem%>:あの # ; ! that thing over there
+
 LEXICON Conjunctions 
 しかし%<cnjcoo%>:しかし # ; ! however
 
@@ -221,6 +238,13 @@ LEXICON Conjunctions
 
 LEXICON Digits
 DIGITLEX ;
+
+LEXICON Punctuation
+。%<sent%>:。 # ;
+、%<cm%>:、 # ;
+「%<lquot%>:「 # ;
+」%<rquot%>:」 # ;
+
 
 
 ! Resources:
