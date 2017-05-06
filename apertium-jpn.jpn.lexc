@@ -67,6 +67,8 @@ Multichar_Symbols
 %<cm%>
 %<lquot%>
 %<rquot%>
+%<lpar%>
+%<rpar%>
 
 ! Other symbols
 %>      ! Morpheme boundary
@@ -116,8 +118,9 @@ LEXICON iAdj
 %<adj%>%<npst%>:%>い #;
 %<adj%>%+です%<cop%>%<pol%>%<npst%>:%>いです FinPart ;
 %<adj%>%<ifml%>%<past%>:%>かった FinPart ;
-%<adj%>%<ifml%>%<npst%>:%>くない FinPart ;
-%<adj%>%<ifml%>%<past%>:%>くなかった FinPart ;
+%<adj%>%<ifml%>%<npst%>%<neg%>:%>くない FinPart ;
+%<adj%>%<ifml%>%<past%>%<neg%>:%>くなかった FinPart ;
+
 
 LEXICON naAdjTag
 %<adj%>: NounInfl ;
@@ -151,6 +154,32 @@ LEXICON FinPart
 %+ね%<mod%>:%>ね # ; ! Emphasis
 %+か%<mod%>:%>か # ; ! Question
 
+LEXICON UVerbInflCP
+%<v%>: UVerbInfl ;
+
+LEXICON RuVerbInflCP
+%<v%> RuVerbInfl ;
+
+LEXICON UVerbInfl
+%<ifml%>%<npst%>: PostShortForm ; 
+!%<ifml%>%<past%>
+!%<ifml%>%<npst%>%<neg%>
+!%<ifml%>%<past%>%<neg%>
+
+LEXICON RuVerbInfl
+%<ifml%>%<npst%>:%>る PostShortForm ;
+%<ifml%>%<past%>:%>た PostShortForm ;
+%<ifml%>%<npst%>%<neg%>:%>ない PostShortForm ;
+%<ifml%>%<past%>%<neg%>:%>なかった PostShortForm ;
+%<pol%>%<npst%>:%ます # ;
+%<pol%>%<past%>:%>ました # ;
+%<pol%>%<npst%>%<neg%>:%>ません # ;
+%<pol%>%<past%>%<neg%>:%>ませんでした # ;
+
+
+LEXICON PostShortForm
+%<nz%>:%>こと NounInfl ;
+
 LEXICON LOOP
 %,:%, DIGITLEX ;
 %.:%. DIGITLEX ;
@@ -172,12 +201,12 @@ LEXICON DIGITLEX
 9:9   LOOP ;
 
 LEXICON POST-DIGITS
-%<num%>: # ;
-年%<num%>:年 # ; ! year ねん
-月%<num%>:月 # ; ! month がつ
-日%<num%>:日 # ; ! day にち
-時%<num%>:時 # ; ! hour じ
-分%<num%>:分 # ; ! minute ぶん
+%<num%>: PostPos ;
+年%<num%>:年 PostPos ; ! year ねん
+月%<num%>:月 PostPos ; ! month がつ
+日%<num%>:日 PostPos ; ! day にち
+時%<num%>:時 PostPos ; ! hour じ
+分%<num%>:分 PostPos ; ! minute ぶん
 
 
 
@@ -194,6 +223,7 @@ LEXICON NounRoot
 原爆爆弾:原爆爆弾 NounTag ; ! atomic bomb げんばくばくだん
 平和:平和 NounTag ; ! peace へいわ
 公園:公園 NounTag ; ! park こうえん
+広島市中央公園:広島市中央公園 NounTag ; ! Hiroshima central park ひろしまちゅうおこうえん
 世界:世界 NounTag ; ! world せかい
 グレープフルーツ:グレープフルーツ NounTag ; ! grapefruit
 ジュース:ジュース NounTag ; ! juice
@@ -205,18 +235,23 @@ LEXICON NounRoot
 海外:かいがい NounTag ; ! foreign/overseas かいがい 
 たまご:たまご NounTag ; ! Dir/LR
 卵:卵 NounTag ; ! egg
+日本語:日本語 NounTag ; ! Japanese language nihongo
+北側:北側 NounTag ; ! north side kitagawa
+会社:会社 NounTag ; ! company kaisha
+学校:学校 NounTag ; ! school gakkou
+公式サイト:公式サイト NounTag ; ! official site koushikisaito
 
 LEXICON ProperNouns
 日本:日本 NPTop ; ! Japan
 アメリカ:アメリカ NPTop ; ! America
 
 LEXICON VerbRoot 
-食べる:食べ # ; ! eat
-落とす:落とす # ; ! drop
-含まる:含まる # ; ! include
-向ける:向け # ; ! turn
-残る:残る # ; ! remain
-呼ぶ:呼ぶ # ; ! call (something a name/yell out) よぶ
+食べる:食べ RuVerbInflCP ; ! eat
+落とす:落とす UVerbInflCP ; ! drop
+含まる:含まる UVerbInflCP ; ! include
+向ける:向け UVerbInflCP ; ! turn
+残る:残る UVerbInflCP ; ! remain
+呼ぶ:呼ぶ UVerbInflCP ; ! call (something a name/yell out) よぶ
  
 
 LEXICON AdjRoot 
@@ -244,7 +279,8 @@ LEXICON Punctuation
 、%<cm%>:、 # ;
 「%<lquot%>:「 # ;
 」%<rquot%>:」 # ;
-
+（%<lpar%>:（ # ;
+）%<rpar%>:） # ;
 
 
 ! Resources:
