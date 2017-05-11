@@ -229,6 +229,14 @@ LEXICON NounRoot
 公園:公園 NounTag ; ! park こうえん
 広島市中央公園:広島市中央公園 NounTag ; ! Hiroshima central park ひろしまちゅうおこうえん
 世界:世界 NounTag ; ! world せかい
+設計:設計 NounTag ; ! せっけい design/layout
+爆心地:爆心地 NounTag ; ! ばくしんち hypocentre
+資料館:資料館 NounTag ; ! しりょうかん museum/archive
+構想:構想 NounTag ; ! こうそう plan
+バラック:バラック NounTag ; ! barracks
+区域:区域 NounTag ; ! くいき limits
+繁華街:繁華街 NounTag ; ! はんかがい downtown
+地区:地区 NounTag ; ! ちく district
 グレープフルーツ:グレープフルーツ NounTag ; ! grapefruit
 ジュース:ジュース NounTag ; ! juice
 マーマレード:マーマレード NounTag ; ! marmalade
@@ -254,6 +262,24 @@ LEXICON NounRoot
 ニュアンス:ニュアンス NounTag ; ! nuance
 表現:表現 NounTag ; ! ひょうげん expression
 水:水 NounTag ; ! みず water
+水気:水気 NounTag ; ! みずけ moisture
+選択:洗濯 NounTag ; ! せんたく laundry
+字:字 NounTag ; ! じ character
+漬物:漬物 NounTag ; ! つけもの pickled vegetables
+搾菜:搾菜 NounTag ; ! ザーサイ Szechuan pickles
+内部:内部 NounTag ; ! ないぶ interior
+外部:外部 NounTag ; ! がいぶ exterior
+動作:動作 NounTag ; ! どうさ action
+可能:可能 NounTag ; ! かのう potential
+流体:流体 NounTag ; ! りゅうたい fluid
+タオル:タオル NounTag ; ! towel
+同時:同時 NounTag ; ! どうじ simultaneous
+中止:中止 NounTag ; ! ちゅうし suspension/interruption
+隙間:隙間 NounTag ; ! すきま gap
+制限:制限 NounTag ; ! せいげん limit
+媒介:媒介　NounTag ; ! ばいかい　intermediary
+空中:空中 NounTag ; ! くうちゅう air
+
 
 LEXICON ProperNouns
 日本:日本 NPTop ; ! Japan
@@ -264,6 +290,8 @@ LEXICON AdjRoot
 多い:多 iAdj ; ! おお　many
 様々:様々 naAdjTag ; ! さまざま various
 必要:必要 naAdjTag ; ! ひつよう necessary
+相対的:相対的 naAdjTag ; ! そうたいてき relative
+最終的:最終的 naAdjTag ; ! さいしゅうてき final
 
 LEXICON VerbRoot 
 食べる:食べ RuVerbInflCP ; ! eat
