@@ -7,6 +7,7 @@ Multichar_Symbols
 %<pn%>  ! Proper noun
 %<v%>	! Verb
 %<adj%> ! Adjective
+%<adv%> ! Adverb
 %<cnjcoo%> ! Coordinating conjunction
 %<ij%>  ! Interjection
 %<prn%> ! Pronoun
@@ -96,6 +97,8 @@ Determiners ;
 
 !Interjections ;
 
+Adverbs ;
+
 Digits ;
 
 Punctuation ;
@@ -120,6 +123,7 @@ LEXICON iAdj
 %<adj%>%<ifml%>%<past%>:%>かった FinPart ;
 %<adj%>%<ifml%>%<npst%>%<neg%>:%>くない FinPart ;
 %<adj%>%<ifml%>%<past%>%<neg%>:%>くなかった FinPart ;
+%<adj%>%<az%>:%>く # ;
 
 
 LEXICON naAdjTag
@@ -240,10 +244,26 @@ LEXICON NounRoot
 会社:会社 NounTag ; ! company kaisha
 学校:学校 NounTag ; ! school gakkou
 公式サイト:公式サイト NounTag ; ! official site koushikisaito
+絞り:絞り NounTag ; ! しぼり
+物品:物品 NounTag ; ! ぶっぴん goods
+基本:基本 NounTag ; ! きほん foundation
+方法:方法 NounTag ; ! ほうほう method
+ドライクリーニング:ドライクリーニング NounTag ; ! dry cleaning
+牛乳:牛乳 NounTag ; ! ぎゅうにゅう milk
+場合:場合 NounTag ; ! ばあい situation/case
+ニュアンス:ニュアンス NounTag ; ! nuance
+表現:表現 NounTag ; ! ひょうげん expression
+水:水 NounTag ; ! みず water
 
 LEXICON ProperNouns
 日本:日本 NPTop ; ! Japan
 アメリカ:アメリカ NPTop ; ! America
+
+LEXICON AdjRoot 
+静か:静か naAdjTag ; ! しずか　quiet
+多い:多 iAdj ; ! おお　many
+様々:様々 naAdjTag ; ! さまざま various
+必要:必要 naAdjTag ; ! ひつよう necessary
 
 LEXICON VerbRoot 
 食べる:食べ RuVerbInflCP ; ! eat
@@ -252,11 +272,9 @@ LEXICON VerbRoot
 向ける:向け UVerbInflCP ; ! turn
 残る:残る UVerbInflCP ; ! remain
 呼ぶ:呼ぶ UVerbInflCP ; ! call (something a name/yell out) よぶ
- 
-
-LEXICON AdjRoot 
-静か:静か naAdjTag ; ! quiet
-多い:多 iAdj ; ! many
+使う:使う UVerbInflCP ; ! つかう use
+持つ:持つ UVerbInflCP ; ! もつ carry 
+行う:行う UVerbInflCP ; ! おこなう occur
 
 LEXICON Pronouns 
 私%<prn%>%<pers%>%<p1%>:私 NounPl ;
@@ -268,6 +286,9 @@ LEXICON Determiners
 
 LEXICON Conjunctions 
 しかし%<cnjcoo%>:しかし # ; ! however
+
+LEXICON Adverbs
+特に%<adv%>:特に # ; ! とくに especially
 
 !LEXICON Interjections 
 
