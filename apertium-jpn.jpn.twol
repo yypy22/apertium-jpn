@@ -12,7 +12,11 @@ Alphabet
 動 作 可 能 流 同 中 止  隙 間 制 限 媒 介 最 終 空 中 外 設 計 心 地
 資 料 館 構 想 区 域 繁 華 街 
 
- %{A%}:a %>:0  ;
+%>:0  
+%{っ%}:0
+%{a%}:0
+%{た%}:た   
+;
 
 Sets
 
@@ -28,8 +32,28 @@ Orow = お　こ ご　そ　ぞ　と　ど　の　ほ　ぼ　ぽ　も　ろ
 
 Rules 
 
-"Remove suffix vowel with vowel-ending stem"
-i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+"{a} changes the end of the verb to Ca"
+Cu:Ca <=> _ %>: %{a%}:0 ;
+  where Cu in (う く ぐ　す　む　ぶ　る) 
+        Ca in (わ か が　さ　ま　ば　ら) 
+  matched ;
+
+"{た} goes to だ if needed"
+%{た%}:だ <=> x %>: %{っ%}: _ ;
+  where x in (ぐ　む　ぶ)
+  matched ;
+
+"{て} goes to で if needed"
+%{て%}:で <=> x %>: %{っ%}: _ ;
+  where x in (ぐ　む　ぶ)
+  matched ;
+
+"end of verb goes to appropriate thing for た and て forms"
+x:y <=> _ %>: %{っ%} ;
+  where x in (う く ぐ す む ぶ る) 
+        y in (っ い い し ん ん っ)
+  matched;
+
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol

@@ -54,6 +54,8 @@ Multichar_Symbols
 %<caus%>  ! Causative
 %<pot%>   ! Potential
 %<pass%>  ! Passive
+%<cvb_te%> ! te form, because I don't know what it is
+%<prog%> ! progressive
 
 ! Number morphology
 %<pl%>  ! Plural
@@ -73,7 +75,10 @@ Multichar_Symbols
 
 ! Other symbols
 %>      ! Morpheme boundary
-
+%{っ%} ! for use in ta and te form
+%{a%} ! for use in neg form
+%{た%} ! for use in ta form
+%{て%} ! for te form
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
@@ -160,15 +165,21 @@ LEXICON FinPart
 
 LEXICON UVerbInflCP
 %<v%>: UVerbInfl ;
+%<v%>%<caus%>:%>%{a%}せ RuVerbInfl ;
+%<v%>%<pass%>:%>%{a%}れ RuVerbInfl ;
 
 LEXICON RuVerbInflCP
 %<v%> RuVerbInfl ;
+%<v%>%<caus%>:%>させ RuVerbInfl ;
+%<v%>%<pass%>:%>られ RuVerbInfl ;
+%<v%>%<caus%>%<pass%>:%>させられ RuVerbInfl ;
 
 LEXICON UVerbInfl
 %<ifml%>%<npst%>: PostShortForm ; 
-!%<ifml%>%<past%>
-!%<ifml%>%<npst%>%<neg%>
-!%<ifml%>%<past%>%<neg%>
+%<ifml%>%<past%>:%>%{っ%}%{た%} PostShortForm ;
+%<ifml%>%<npst%>%<neg%>:%>%{a%}ない PostShortForm ; 
+%<ifml%>%<past%>%<neg%>:%>%{a%}なかった PostShortForm ;
+%<cvb_te%>:%>%{っ%}%{て%} # ; ! needs to go to a post-te lexicon
 
 LEXICON RuVerbInfl
 %<ifml%>%<npst%>:%>る PostShortForm ;
@@ -179,7 +190,11 @@ LEXICON RuVerbInfl
 %<pol%>%<past%>:%>ました # ;
 %<pol%>%<npst%>%<neg%>:%>ません # ;
 %<pol%>%<past%>%<neg%>:%>ませんでした # ;
+%<cvb_te%>:%>て PostTeForm ;
 
+LEXICON PostTeForm
+# ;
+%<prog%>:%>いる # ; ! this needs to get inflected
 
 LEXICON PostShortForm
 %<nz%>:%>こと NounInfl ;
@@ -277,7 +292,7 @@ LEXICON NounRoot
 中止:中止 NounTag ; ! ちゅうし suspension/interruption
 隙間:隙間 NounTag ; ! すきま gap
 制限:制限 NounTag ; ! せいげん limit
-媒介:媒介　NounTag ; ! ばいかい　intermediary
+媒介:媒介 NounTag ; ! ばいかい　intermediary
 空中:空中 NounTag ; ! くうちゅう air
 
 
@@ -302,7 +317,12 @@ LEXICON VerbRoot
 呼ぶ:呼ぶ UVerbInflCP ; ! call (something a name/yell out) よぶ
 使う:使う UVerbInflCP ; ! つかう use
 持つ:持つ UVerbInflCP ; ! もつ carry 
-行う:行う UVerbInflCP ; ! おこなう occur
+行う:行う UVerbInflCP ; ! おこなう occur TODO actually irregular
+する%<v%>%<ifml%>%<npst%>:する PostShortForm ; ! do
+する%<v%>%<pol%>%<npst%>:します # ;
+する%<v%>%<cvb_te%>:して # ;
+する%<v%>%<caus%>:させ RuVerbInfl ;
+する%<v%>%<pass%>:され RuVerbInfl ;
 
 LEXICON Pronouns 
 私%<prn%>%<pers%>%<p1%>:私 NounPl ;
@@ -314,6 +334,8 @@ LEXICON Determiners
 
 LEXICON Conjunctions 
 しかし%<cnjcoo%>:しかし # ; ! however
+また%<cnjcoo%>:また # ; ! also
+そして%<cnjcoo%>:そして # ; ! additionally
 
 LEXICON Adverbs
 特に%<adv%>:特に # ; ! とくに especially
