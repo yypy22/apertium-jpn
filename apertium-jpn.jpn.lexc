@@ -167,6 +167,7 @@ LEXICON UVerbInflCP
 %<v%>: UVerbInfl ;
 %<v%>%<caus%>:%>%{a%}せ RuVerbInfl ;
 %<v%>%<pass%>:%>%{a%}れ RuVerbInfl ;
+%<v%>%<caus%>%<pass%>:%>%{a%}せられ RuVerbInfl ;
 
 LEXICON RuVerbInflCP
 %<v%> RuVerbInfl ;
@@ -317,7 +318,7 @@ LEXICON VerbRoot
 呼ぶ:呼ぶ UVerbInflCP ; ! call (something a name/yell out) よぶ
 使う:使う UVerbInflCP ; ! つかう use
 持つ:持つ UVerbInflCP ; ! もつ carry 
-行う:行う UVerbInflCP ; ! おこなう occur TODO actually irregular
+行う:行う UVerbInflCP ; ! おこなう occur 
 する%<v%>%<ifml%>%<npst%>:する PostShortForm ; ! do
 する%<v%>%<pol%>%<npst%>:します # ;
 する%<v%>%<cvb_te%>:して # ;

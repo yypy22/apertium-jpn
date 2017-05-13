@@ -3,8 +3,9 @@ Japanese
                             apertium-jpn
 ===============================================================================
 
-This is an Apertium monolingual language package for Japanese. What
-you can use this language package for:
+This is an Apertium monolingual language package for Japanese. It was started as a final project for LING 073 at Swarthmore College in the spring of 2017.  More information can be found here: https://wikis.swarthmore.edu/ling073/User:Doldham1/Final_project#Evaluation
+
+What you can use this language package for:
 
 * Morphological analysis of Japanese
 * Morphological generation of Japanese
