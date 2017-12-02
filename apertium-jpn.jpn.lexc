@@ -170,7 +170,7 @@ LEXICON UVerbInflCP
 %<v%>%<caus%>%<pass%>:%>%{a%}せられ RuVerbInfl ;
 
 LEXICON RuVerbInflCP
-%<v%> RuVerbInfl ;
+%<v%>: RuVerbInfl ;
 %<v%>%<caus%>:%>させ RuVerbInfl ;
 %<v%>%<pass%>:%>られ RuVerbInfl ;
 %<v%>%<caus%>%<pass%>:%>させられ RuVerbInfl ;
@@ -187,7 +187,7 @@ LEXICON RuVerbInfl
 %<ifml%>%<past%>:%>た PostShortForm ;
 %<ifml%>%<npst%>%<neg%>:%>ない PostShortForm ;
 %<ifml%>%<past%>%<neg%>:%>なかった PostShortForm ;
-%<pol%>%<npst%>:%ます # ;
+%<pol%>%<npst%>:%>ます # ;
 %<pol%>%<past%>:%>ました # ;
 %<pol%>%<npst%>%<neg%>:%>ません # ;
 %<pol%>%<past%>%<neg%>:%>ませんでした # ;
