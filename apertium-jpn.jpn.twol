@@ -56,7 +56,7 @@ Cu:Ci <=> _ %>: %{i%}:0 ;
   matched ;
 
 "end of verb goes to appropriate thing for た and て forms"
-x:y <=> _ %>: %{っ%} ;
+x:y <=> _ %>: %{っ%}:0 ;
   where x in (う く ぐ す む ぶ る)
         y in (っ い い し ん ん っ)
   matched;
