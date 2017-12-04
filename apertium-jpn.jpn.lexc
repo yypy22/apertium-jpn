@@ -13,6 +13,9 @@ Multichar_Symbols
 %<prn%> ! Pronoun
 %<cop%>	! Copula
 %<num%> ! Numeral
+%<det%> ! Determiner
+
+%<dem%> ! Demonstrative
 
 %<top%> ! toponym (should probably be changed?)
 
