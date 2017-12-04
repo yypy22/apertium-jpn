@@ -25,7 +25,7 @@ Multichar_Symbols
 %<acc%>  ! Accusative
 %<dat%>  ! Dative
 %<quot%> ! Quotative
-%<all%> ! Allative 
+%<all%> ! Allative
 %<abl%>  ! Ablative
 %<ins%>  ! Instrumental
 %<com%>  ! Comitative
@@ -91,9 +91,9 @@ NounRoot ;
 ProperNouns ;
 
 VerbRoot ;
- 
+
 AdjRoot ;
- 
+
 Pronouns ;
 
 Conjunctions ;
@@ -151,11 +151,11 @@ LEXICON PostPos
 %<quot%>:%>と # ;
 %<abl%>:%>から # ;
 %<ins%>:%>で # ;
-%<all%>:%>へ # ; 
-%<term%>:%>まで # ;   
+%<all%>:%>へ # ;
+%<term%>:%>まで # ;
 ! mo
 ! ya
-%<abs%>: # ; 
+%<abs%>: # ;
 
 LEXICON FinPart
 %+わ%<mod%>:%>わ # ; !
@@ -176,10 +176,14 @@ LEXICON RuVerbInflCP
 %<v%>%<caus%>%<pass%>:%>させられ RuVerbInfl ;
 
 LEXICON UVerbInfl
-%<ifml%>%<npst%>: PostShortForm ; 
+%<ifml%>%<npst%>: PostShortForm ;
 %<ifml%>%<past%>:%>%{っ%}%{た%} PostShortForm ;
-%<ifml%>%<npst%>%<neg%>:%>%{a%}ない PostShortForm ; 
+%<ifml%>%<npst%>%<neg%>:%>%{a%}ない PostShortForm ;
 %<ifml%>%<past%>%<neg%>:%>%{a%}なかった PostShortForm ;
+%<pol%>%<npst%>:%>%{i%}ます # ;
+%<pol%>%<past%>:%>%{i%}ました # ;
+%<pol%>%<npst%>%<neg%>:%>%{i%}ません # ;
+%<pol%>%<past%>%<neg%>:%>%{i%}ませんでした # ;
 %<cvb_te%>:%>%{っ%}%{て%} # ; ! needs to go to a post-te lexicon
 
 LEXICON RuVerbInfl
@@ -261,7 +265,7 @@ LEXICON NounRoot
 土:土 NounTag ; ! soil つち
 フラノクマリン:フラノクマリン NounTag ; ! furanocoumarin
 食用:食用 NounTag ; ! edible しょくよう
-海外:かいがい NounTag ; ! foreign/overseas かいがい 
+海外:かいがい NounTag ; ! foreign/overseas かいがい
 たまご:たまご NounTag ; ! Dir/LR
 卵:卵 NounTag ; ! egg
 日本語:日本語 NounTag ; ! Japanese language nihongo
@@ -302,7 +306,7 @@ LEXICON ProperNouns
 日本:日本 NPTop ; ! Japan
 アメリカ:アメリカ NPTop ; ! America
 
-LEXICON AdjRoot 
+LEXICON AdjRoot
 静か:静か naAdjTag ; ! しずか　quiet
 多い:多 iAdj ; ! おお　many
 様々:様々 naAdjTag ; ! さまざま various
@@ -310,7 +314,7 @@ LEXICON AdjRoot
 相対的:相対的 naAdjTag ; ! そうたいてき relative
 最終的:最終的 naAdjTag ; ! さいしゅうてき final
 
-LEXICON VerbRoot 
+LEXICON VerbRoot
 食べる:食べ RuVerbInflCP ; ! eat
 落とす:落とす UVerbInflCP ; ! drop
 含まる:含まる UVerbInflCP ; ! include
@@ -318,15 +322,15 @@ LEXICON VerbRoot
 残る:残る UVerbInflCP ; ! remain
 呼ぶ:呼ぶ UVerbInflCP ; ! call (something a name/yell out) よぶ
 使う:使う UVerbInflCP ; ! つかう use
-持つ:持つ UVerbInflCP ; ! もつ carry 
-行う:行う UVerbInflCP ; ! おこなう occur 
+持つ:持つ UVerbInflCP ; ! もつ carry
+行う:行う UVerbInflCP ; ! おこなう occur
 する%<v%>%<ifml%>%<npst%>:する PostShortForm ; ! do
 する%<v%>%<pol%>%<npst%>:します # ;
 する%<v%>%<cvb_te%>:して # ;
 する%<v%>%<caus%>:させ RuVerbInfl ;
 する%<v%>%<pass%>:され RuVerbInfl ;
 
-LEXICON Pronouns 
+LEXICON Pronouns
 私%<prn%>%<pers%>%<p1%>:私 NounPl ;
 
 LEXICON Determiners
@@ -334,7 +338,7 @@ LEXICON Determiners
 その%<det%>%<dem%>:その # ; ! that
 あの%<det%>%<dem%>:あの # ; ! that thing over there
 
-LEXICON Conjunctions 
+LEXICON Conjunctions
 しかし%<cnjcoo%>:しかし # ; ! however
 また%<cnjcoo%>:また # ; ! also
 そして%<cnjcoo%>:そして # ; ! additionally
@@ -342,7 +346,7 @@ LEXICON Conjunctions
 LEXICON Adverbs
 特に%<adv%>:特に # ; ! とくに especially
 
-!LEXICON Interjections 
+!LEXICON Interjections
 
 LEXICON Digits
 DIGITLEX ;
@@ -364,4 +368,3 @@ LEXICON Punctuation
 ! http://hfst.sourceforge.net/
 ! http://www.cis.upenn.edu/~cis639/docs/lexc.html
 ! http://wiki.apertium.org/wiki/Hfst
-
