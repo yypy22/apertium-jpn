@@ -198,6 +198,7 @@ LEXICON PostTeForm
 %<prog%>:%>いる # ; ! this needs to get inflected
 
 LEXICON PostShortForm
+# ;
 %<nz%>:%>こと NounInfl ;
 
 LEXICON LOOP
