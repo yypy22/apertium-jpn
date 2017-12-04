@@ -79,6 +79,7 @@ Multichar_Symbols
 %{a%} ! for use in neg form
 %{た%} ! for use in ta form
 %{て%} ! for te form
+%{i%}
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
