@@ -328,6 +328,7 @@ LEXICON VerbRoot
 使う:使う UVerbInflCP ; ! つかう use
 持つ:持つ UVerbInflCP ; ! もつ carry
 行う:行う UVerbInflCP ; ! おこなう occur
+死ぬ:死ぬ UVerbInflCP ; ! die
 する%<v%>%<ifml%>%<npst%>:する PostShortForm ; ! do
 する%<v%>%<pol%>%<npst%>:します # ;
 する%<v%>%<cvb_te%>:して # ;
@@ -335,7 +336,8 @@ LEXICON VerbRoot
 する%<v%>%<pass%>:され RuVerbInfl ;
 
 LEXICON Pronouns
-私%<prn%>%<pers%>%<p1%>:私 NounPl ;
+私%<prn%>%<pers%>%<p1%>:私 NounPl ; I
+おまえ%<prn%>%<pers%>%<p2%>:おまえ NounPl ;
 
 LEXICON Determiners
 この%<det%>%<dem%>:この # ; ! this
@@ -349,6 +351,7 @@ LEXICON Conjunctions
 
 LEXICON Adverbs
 特に%<adv%>:特に # ; ! とくに especially
+もう%<adv%>:もう # ; ! already
 
 !LEXICON Interjections
 
