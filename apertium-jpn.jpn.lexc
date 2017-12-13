@@ -336,7 +336,7 @@ LEXICON VerbRoot
 する%<v%>%<pass%>:され RuVerbInfl ;
 
 LEXICON Pronouns
-私%<prn%>%<pers%>%<p1%>:私 NounPl ; I
+私%<prn%>%<pers%>%<p1%>:私 NounPl ; ! I
 おまえ%<prn%>%<pers%>%<p2%>:おまえ NounPl ;
 
 LEXICON Determiners
