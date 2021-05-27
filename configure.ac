@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Japanese], [0.1.0], [doldham1@swarthmore.edu], [apertium-jpn], [http://wiki.apertium.org/wiki/Apertium-jpn])
+AC_INIT([Apertium Japanese], [0.1.0], [doldham1@swarthmore.edu], [apertium-jpn], [https://wiki.apertium.org/wiki/Apertium-jpn])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
