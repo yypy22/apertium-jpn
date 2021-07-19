@@ -1,0 +1,18 @@
+[2TqDXQ8nh7yx#0] ^」/」<rquot>$
+[/2TqDXQ8nh7yx]
+[2gR8BMm14n54#0] ^（/（<lpar>$
+[/2gR8BMm14n54]
+[6w1YhFabOY5H#0] ^。/。<sent>$
+[/6w1YhFabOY5H]
+[8mk6ChGxCMlv#0] ^8分から/8分<num><abl>$
+[/8mk6ChGxCMlv]
+[8uRMbJVF8Iun#0] ^）/）<rpar>$
+[/8uRMbJVF8Iun]
+[NGPGva2qBUQx#0] ^場合たちまで/場合<n><pl><term>$
+[/NGPGva2qBUQx]
+[Waj7DYh5oGBz#0] ^土たちが/土<n><pl><nom>$
+[/Waj7DYh5oGBz]
+[aB2gwQ4bs_Qn#0] ^27月まで/27月<num><term>$
+[/aB2gwQ4bs_Qn]
+[b0Au_Jkh07qK#0] ^食べられました/食べる<v><pass><pol><past>$
+[/b0Au_Jkh07qK]
