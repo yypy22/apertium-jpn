@@ -15,7 +15,7 @@
     <pipeline>
       <program name="python3">
         <file name="tokenize.py"/>
-        <file name="jpn.automorf.hfst"/>
+        <file name="jpn.autotok.hfst"/>
       </program>
       <program name="lt-proc -w">
         <file name="jpn.automorf.bin"/>
@@ -51,7 +51,7 @@
     <pipeline>
     <program name="python3">
         <file name="tokenize.py"/>
-        <file name="jpn.automorf.hfst"/>
+        <file name="jpn.autotok.hfst"/>
       </program>
       <program name="lt-proc -w">
         <file name="jpn.automorf.bin"/>
@@ -66,7 +66,7 @@
     <pipeline>
     <program name="python3">
         <file name="tokenize.py"/>
-        <file name="jpn.automorf.hfst"/>
+        <file name="jpn.autotok.hfst"/>
       </program>
       <program name="lt-proc -w">
         <file name="jpn.automorf.bin"/>

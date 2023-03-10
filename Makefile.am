@@ -5,8 +5,6 @@
 RELEASE=0.1
 VERSION=0.1.0
 LANG1=jpn
-SCRIPT2=Yi
-LANG1SCRIPT2=$(LANG1)@$(SCRIPT2)
 BASENAME=apertium-$(LANG1)
 
 TARGETS_COMMON =			\
@@ -16,6 +14,7 @@ TARGETS_COMMON =			\
 	$(LANG1).autogen.hfst		\
 	$(LANG1).autogen.bin		\
 	$(LANG1).autogen.att.gz		\
+	$(LANG1).autotok.hfst     \
 	$(LANG1).autopgen.bin		\
 	$(LANG1).rlx.bin
 
@@ -50,7 +49,7 @@ TARGETS_COMMON =			\
 $(LANG1).autogen.hfst: .deps/$(LANG1).RL.hfst
 	hfst-fst2fst -O $< -o $@
 
-$(LANG1SCRIPT2).autotok.hfst: .deps/$(LANG1SCRIPT2).automorf.hfst
+$(LANG1).autotok.hfst: .deps/$(LANG1).LR.hfst
 	hfst-fst2fst -F $< | hfst-project -p input | hfst-minimise -o $@
 
 $(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst
