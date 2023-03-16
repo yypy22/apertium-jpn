@@ -68,7 +68,7 @@ Files and data
 * apertium-jpn.post-jpn.dix      - Post-generator
 * jpn.prob                       - Tagger model
 * modes.xml                      - Translation modes
-
+* tokenized.py                   - Tokeniser
 For more information
 ===============================================================================
 
