@@ -13,6 +13,7 @@
 
   <mode name="jpn-morph" install="yes">
     <pipeline>
+    <!-- Using tokenizer written in python3 -->
       <program name="python3">
         <file name="tokenize.py"/>
         <file name="jpn.autotok.hfst"/>
@@ -39,16 +40,9 @@
     </pipeline>
   </mode>
 
-  <mode name="jpn_Yi-gener" install="yes">
-    <pipeline>
-      <program name="lt-proc -g">
-        <file name="jpn.autogen.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
   <mode name="jpn-tagger" install="yes">
     <pipeline>
+    <!-- Using tokenizer written in python3 -->
     <program name="python3">
         <file name="tokenize.py"/>
         <file name="jpn.autotok.hfst"/>
@@ -64,6 +58,7 @@
 
   <mode name="jpn-disam" install="yes">
     <pipeline>
+    <!-- Using tokenizer written in python3 -->
     <program name="python3">
         <file name="tokenize.py"/>
         <file name="jpn.autotok.hfst"/>
