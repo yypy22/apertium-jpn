@@ -236,6 +236,7 @@ LEXICON POST-DIGITS
 日%<num%>:日 PostPos ; ! day にち
 時%<num%>:時 PostPos ; ! hour じ
 分%<num%>:分 PostPos ; ! minute ぶん
+秒%<num%>:秒 PostPos ; ! second びょう
 
 
 
@@ -337,6 +338,31 @@ LEXICON VerbRoot
 
 LEXICON Pronouns
 私%<prn%>%<pers%>%<p1%>:私 NounPl ; ! I
+わたし%<prn%>%<pers%>%<p1%>:わたし NounPl ; ! I
+わたくし%<prn%>%<pers%>%<p1%>:わたくし NounPl ; ! I
+俺%<prn%>%<pers%>%<p1%>:俺 NounPl ; ! I
+おれ%<prn%>%<pers%>%<p1%>:おれ NounPl ; ! I
+僕%<prn%>%<pers%>%<p1%>:僕 NounPl ; ! I
+ぼく%<prn%>%<pers%>%<p1%>:ぼく NounPl ; ! I
+儂%<prn%>%<pers%>%<p1%>:儂 NounPl ; ! I
+わい%<prn%>%<pers%>%<p1%>:わい NounPl ; ! I
+わし%<prn%>%<pers%>%<p1%>:わし NounPl ; ! I
+ワシ%<prn%>%<pers%>%<p1%>:ワシ NounPl ; ! I
+余%<prn%>%<pers%>%<p1%>:余 NounPl ; ! I
+妾%<prn%>%<pers%>%<p1%>:妾 NounPl ; ! I
+拙者%<prn%>%<pers%>%<p1%>:拙者 NounPl ; ! I
+おら%<prn%>%<pers%>%<p1%>:おら NounPl ; ! I
+おいどん%<prn%>%<pers%>%<p1%>:おいどん NounPl ; ! I
+あたし%<prn%>%<pers%>%<p1%>:あたし NounPl ; ! I
+自分%<prn%>%<pers%>%<p1%>:自分 NounPl ; ! I
+あたい%<prn%>%<pers%>%<p1%>:あたい NounPl ; ! I
+あーし%<prn%>%<pers%>%<p1%>:あーし NounPl ; ! I
+わい%<prn%>%<pers%>%<p1%>:わい NounPl ; ! I
+当方%<prn%>%<pers%>%<p1%>:当方 NounPl ; ! I
+小生%<prn%>%<pers%>%<p1%>:小生 NounPl ; ! I
+我輩%<prn%>%<pers%>%<p1%>:我輩 NounPl ; ! I
+朕%<prn%>%<pers%>%<p1%>:朕 NounPl ; ! I
+某%<prn%>%<pers%>%<p1%>:某 NounPl ; ! I
 おまえ%<prn%>%<pers%>%<p2%>:おまえ NounPl ;
 
 LEXICON Determiners
@@ -347,11 +373,24 @@ LEXICON Determiners
 LEXICON Conjunctions
 しかし%<cnjcoo%>:しかし # ; ! however
 また%<cnjcoo%>:また # ; ! also
-そして%<cnjcoo%>:そして # ; ! additionally
+そして%<cnjcoo%>:そして # ; ! and
+だが%<cnjcoo%>:だが # ; ! however
+なぜならし%<cnjcoo%>:なぜなら # ; ! because
+けれども%<cnjcoo%>:けれども # ; ! although
+もしも%<cnjcoo%>:もしも # ; ! if
+または%<cnjcoo%>:または # ; ! or
 
 LEXICON Adverbs
 特に%<adv%>:特に # ; ! とくに especially
 もう%<adv%>:もう # ; ! already
+既に%<adv%>:既に # ; ! already
+更に%<adv%>:更に # ; ! additionally
+とても%<adv%>:とても # ; ! very
+だんだん%<adv%>:だんだん # ; ! gradually
+徐々に%<adv%>:徐々に # ; ! gradually
+とても%<adv%>:とても # ; ! very
+ゆっくり%<adv%>:ゆっくり # ; ! slowly
+
 
 !LEXICON Interjections
 
