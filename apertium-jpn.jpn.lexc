@@ -373,7 +373,7 @@ LEXICON Determiners
 LEXICON Conjunctions
 しかし%<cnjcoo%>:しかし # ; ! however
 また%<cnjcoo%>:また # ; ! also
-そして%<cnjcoo%>:そして # ; ! additionally
+そして%<cnjcoo%>:そして # ; ! and
 だが%<cnjcoo%>:だが # ; ! however
 なぜならし%<cnjcoo%>:なぜなら # ; ! because
 けれども%<cnjcoo%>:けれども # ; ! although
@@ -384,6 +384,13 @@ LEXICON Adverbs
 特に%<adv%>:特に # ; ! とくに especially
 もう%<adv%>:もう # ; ! already
 既に%<adv%>:既に # ; ! already
+更に%<adv%>:更に # ; ! additionally
+とても%<adv%>:とても # ; ! very
+だんだん%<adv%>:だんだん # ; ! gradually
+徐々に%<adv%>:徐々に # ; ! gradually
+とても%<adv%>:とても # ; ! very
+ゆっくり%<adv%>:ゆっくり # ; ! slowly
+
 
 !LEXICON Interjections
 
