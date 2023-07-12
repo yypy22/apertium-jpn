@@ -230,6 +230,28 @@ LEXICON DIGITLEX
 9:9   LOOP ;
 
 LEXICON Numbers
+一:一
+二:二
+三:三
+四:四
+五:五
+六:六
+七:七
+八:八
+九:九
+十:十
+いち:いち
+に:に
+さん:さん
+よん:よん
+し：し
+ご:ご
+ろく:ろく
+なな:なな
+しち：しち
+はち:はち
+きゅう:きゅう
+じゅう:じゅう
 
 LEXICON POST-DIGITS
 %<num%>: PostPos ;
