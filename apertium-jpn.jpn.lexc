@@ -374,10 +374,16 @@ LEXICON Conjunctions
 しかし%<cnjcoo%>:しかし # ; ! however
 また%<cnjcoo%>:また # ; ! also
 そして%<cnjcoo%>:そして # ; ! additionally
+だが%<cnjcoo%>:だが # ; ! however
+なぜならし%<cnjcoo%>:なぜなら # ; ! because
+けれども%<cnjcoo%>:けれども # ; ! although
+もしも%<cnjcoo%>:もしも # ; ! if
+または%<cnjcoo%>:または # ; ! or
 
 LEXICON Adverbs
 特に%<adv%>:特に # ; ! とくに especially
 もう%<adv%>:もう # ; ! already
+既に%<adv%>:既に # ; ! already
 
 !LEXICON Interjections
 
