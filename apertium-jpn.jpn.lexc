@@ -229,6 +229,8 @@ LEXICON DIGITLEX
 8:8   LOOP ;
 9:9   LOOP ;
 
+Numbers [<num>:]
+
 LEXICON Numbers
 一:一
 二:二
