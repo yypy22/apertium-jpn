@@ -229,6 +229,8 @@ LEXICON DIGITLEX
 8:8   LOOP ;
 9:9   LOOP ;
 
+LEXICON Numbers
+
 LEXICON POST-DIGITS
 %<num%>: PostPos ;
 年%<num%>:年 PostPos ; ! year ねん
