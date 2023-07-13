@@ -390,7 +390,20 @@ LEXICON Pronouns
 我輩%<prn%>%<pers%>%<p1%>:我輩 NounPl ; ! I
 朕%<prn%>%<pers%>%<p1%>:朕 NounPl ; ! I
 某%<prn%>%<pers%>%<p1%>:某 NounPl ; ! I
-おまえ%<prn%>%<pers%>%<p2%>:おまえ NounPl ;
+おまえ%<prn%>%<pers%>%<p2%>:おまえ NounPl ; ! You
+あなた%<prn%>%<pers%>%<p2%>:あなた NounPl ; ! You
+きみ%<prn%>%<pers%>%<p2%>:きみ NounPl ; ! You
+君%<prn%>%<pers%>%<p2%>:君 NounPl ; ! You
+そなた%<prn%>%<pers%>%<p2%>:そなた NounPl ; ! You
+其方%<prn%>%<pers%>%<p2%>:其方 NounPl ; ! You
+そちら%<prn%>%<pers%>%<p2%>:そちら NounPl ; ! You
+お宅%<prn%>%<pers%>%<p2%>:お宅 NounPl ; ! You
+あんた%<prn%>%<pers%>%<p2%>:あんた NounPl ; ! You
+貴君%<prn%>%<pers%>%<p2%>:貴君 NounPl ; ! You
+卿%<prn%>%<pers%>%<p2%>:卿 NounPl ; ! You
+きさま%<prn%>%<pers%>%<p2%>:きさま NounPl ; ! You
+貴様%<prn%>%<pers%>%<p2%>:貴様 NounPl ; ! You
+お主%<prn%>%<pers%>%<p2%>:お主 NounPl ; ! You
 
 LEXICON Determiners
 この%<det%>%<dem%>:この # ; ! this
