@@ -121,10 +121,12 @@ LEXICON NPTop
 %<pn%>%<top%>%+人:%>人 NounInfl ; ! person (effectively, citizen) じん
 %<pn%>%<top%>%+軍:%>軍 NounInfl ; ! military ぐん
 %<pn%>%<top%>%+国内:%>国内 NounInfl ; ! domestic こくない
+%<pn%>%<top%>%+国外:%>国外 NounInfl ; ! foreign こくがい
 
 LEXICON NounPl
 %<sg%>: NounInfl ;
 %<pl%>:%>たち NounInfl ;
+%<pl%>:%>達 NounInfl ;
 
 LEXICON iAdj
 %<adj%>%<npst%>:%>い #;
