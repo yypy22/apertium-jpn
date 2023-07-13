@@ -229,7 +229,6 @@ LEXICON DIGITLEX
 8:8   LOOP ;
 9:9   LOOP ;
 
-PATTERN Number
 Numbers [<num>:]
 
 LEXICON Numbers
