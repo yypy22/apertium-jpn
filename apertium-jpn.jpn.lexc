@@ -337,19 +337,40 @@ LEXICON NounRoot
 LEXICON ProperNouns
 日本:日本 NPTop ; ! Japan
 アメリカ:アメリカ NPTop ; ! America
+韓国:韓国 NPTop ; ! South Korea
+中国:中国 NPTop ; ! China
+イギリス:イギリス NPTop ; ! United Kingdom
+ノルウェー:ノルウェー NPTop ; ! Norway
+フランス:フランス NPTop ; ! France
+スペイン:スペイン NPTop ; ! Spain
+イタリア:イタリア NPTop ; ! Italy
+ロシア:ロシア NPTop ; ! Russia
+フィンランド:フィンランド NPTop ; ! Finland
+スウェーデン:スウェーデン NPTop ; ! Sweden
+デンマーク:デンマーク NPTop ; ! Denmark
+オランダ:オランダ NPTop ; ! Netherland
+ドイツ:ドイツ NPTop ; ! Germany
+オーストラリア:オーストラリア NPTop ; ! Australia
+カナダ:カナダ NPTop ; ! Canada
+ベルギー:ベルギー NPTop ; ! Belgium
+インド:インド NPTop ; ! India
+ギリシャ:ギリシャ NPTop ; ! Greece
+シンガポール:シンガポール NPTop ; ! Singapore
+インドネシア:インドネシア NPTop ; ! Indonesia
+タイ:タイ NPTop ; ! Thailand
 
 LEXICON AdjRoot
 静か:静か naAdjTag ; ! しずか　quiet
-多い:多 iAdj ; ! おお　many
+多い:多い iAdj ; ! おおい　many
 様々:様々 naAdjTag ; ! さまざま various
 必要:必要 naAdjTag ; ! ひつよう necessary
 相対的:相対的 naAdjTag ; ! そうたいてき relative
 最終的:最終的 naAdjTag ; ! さいしゅうてき final
 
 LEXICON VerbRoot
-食べる:食べ RuVerbInflCP ; ! eat
+食べる:食べる RuVerbInflCP ; ! eat
 落とす:落とす UVerbInflCP ; ! drop
-含まる:含まる UVerbInflCP ; ! include
+含む:含む UVerbInflCP ; ! include
 向ける:向け UVerbInflCP ; ! turn
 残る:残る UVerbInflCP ; ! remain
 呼ぶ:呼ぶ UVerbInflCP ; ! call (something a name/yell out) よぶ
