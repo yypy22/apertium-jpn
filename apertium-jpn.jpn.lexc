@@ -212,9 +212,12 @@ LEXICON PostShortForm
 LEXICON LOOP
 %,:%, DIGITLEX ;
 %.:%. DIGITLEX ;
+%,:%, NUMBERS ;
+%.:%. NUMBERS ;
 %,:%, POST-DIGITS ;
 %.:%. POST-DIGITS ;
       DIGITLEX ;
+      NUMBERS ;
       POST-DIGITS ;
 
 LEXICON DIGITLEX
@@ -229,29 +232,29 @@ LEXICON DIGITLEX
 8:8   LOOP ;
 9:9   LOOP ;
 
-LEXICON Numbers
-一:一
-二:二
-三:三
-四:四
-五:五
-六:六
-七:七
-八:八
-九:九
-十:十
-いち:いち
-に:に
-さん:さん
-よん:よん
-し：し
-ご:ご
-ろく:ろく
-なな:なな
-しち：しち
-はち:はち
-きゅう:きゅう
-じゅう:じゅう
+LEXICON NUMBERS
+一%<num%>:一
+二%<num%>:二
+三%<num%>:三
+四%<num%>:四
+五%<num%>:五
+六%<num%>:六
+七%<num%>:七
+八%<num%>:八
+九%<num%>:九
+十%<num%>:十
+いち%<num%>:いち
+に%<num%>:に
+さん%<num%>:さん
+よん%<num%>:よん
+し%<num%>：し
+ご%<num%>:ご
+ろく%<num%>:ろく
+なな%<num%>:なな
+しち%<num%>：しち
+はち%<num%>:はち
+きゅう%<num%>:きゅう
+じゅう%<num%>:じゅう
 
 LEXICON POST-DIGITS
 %<num%>: PostPos ;
