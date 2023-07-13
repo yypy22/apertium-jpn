@@ -400,6 +400,8 @@ LEXICON Pronouns
 きさま%<prn%>%<pers%>%<p2%>:きさま NounPl ; ! You
 貴様%<prn%>%<pers%>%<p2%>:貴様 NounPl ; ! You
 お主%<prn%>%<pers%>%<p2%>:お主 NounPl ; ! You
+彼%<prn%>%<pers%>%<p3%>:彼 NounPl ; ! He
+彼女%<prn%>%<pers%>%<p3%>:彼女 NounPl ; ! She
 
 LEXICON Determiners
 この%<det%>%<dem%>:この # ; ! this
