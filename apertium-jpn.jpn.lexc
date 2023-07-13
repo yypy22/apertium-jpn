@@ -332,7 +332,9 @@ LEXICON NounRoot
 制限:制限 NounTag ; ! せいげん limit
 媒介:媒介 NounTag ; ! ばいかい　intermediary
 空中:空中 NounTag ; ! くうちゅう air
-
+マルチスレッド:マルチスレッド NounTag ; ! multi thread
+記事:記事 NounTag ; ! きじ article
+参考:参考 NounTag ; ! さんこう reference
 
 LEXICON ProperNouns
 日本:日本 NPTop ; ! Japan
