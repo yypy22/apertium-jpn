@@ -110,8 +110,6 @@ Adverbs ;
 
 Digits ;
 
-Numbers ;
-
 Punctuation ;
 
 
@@ -232,6 +230,28 @@ LEXICON DIGITLEX
 7:7   LOOP ;
 8:8   LOOP ;
 9:9   LOOP ;
+一:一 LOOP ;# ; ! one
+二:二 LOOP ;# ; ! two
+三:三 LOOP ;# ; ! three
+四:四 LOOP ;# ; ! four
+五:五 LOOP ;# ; ! five
+六:六 LOOP ;# ; ! six
+七:七 LOOP ;# ; ! seven
+八:八 LOOP ;# ; ! eight
+九:九 LOOP ;# ; ! nine
+十:十 LOOP ;# ; ! ten
+いち:いち LOOP ; # ; ! one
+に:に LOOP ;# ; ! two
+さん:さん LOOP ;# ; ! three
+よん:よん LOOP ;# ; ! four
+し：し LOOP ; # ; ! four
+ご:ご LOOP ; # ; ! five
+ろく:ろく LOOP ;# ; ! six
+なな:なな LOOP ;# ; ! seven
+しち:しち LOOP ;# ; ! seven
+はち:はち LOOP ;# ; ! eight
+きゅう:きゅう LOOP ;# ; ! nine
+じゅう:じゅう LOOP ;# ; ! ten
 
 LEXICON POST-DIGITS
 %<num%>: PostPos ;
@@ -438,30 +458,6 @@ LEXICON Adverbs
 
 LEXICON Digits
 DIGITLEX ;
-
-LEXICON Numbers
-一%<num%>:一 # ; ! one
-二%<num%>:二 # ; ! two
-三%<num%>:三 # ; ! three
-四%<num%>:四 # ; ! four
-五%<num%>:五 # ; ! five
-六%<num%>:六 # ; ! six
-七%<num%>:七 # ; ! seven
-八%<num%>:八 # ; ! eight
-九%<num%>:九 # ; ! nine
-十%<num%>:十 # ; ! ten
-いち%<num%>:いち # ; ! one
-に%<num%>:に # ; ! two
-さん%<num%>:さん # ; ! three
-よん%<num%>:よん # ; ! four
-し%<num%>：し # ; ! four
-ご%<num%>:ご # ; ! five
-ろく%<num%>:ろく # ; ! six
-なな%<num%>:なな # ; ! seven
-しち%<num%>:しち # ; ! seven
-はち%<num%>:はち # ; ! eight
-きゅう%<num%>:きゅう # ; ! nine
-じゅう%<num%>:じゅう # ; ! ten
 
 LEXICON Punctuation
 。%<sent%>:。 # ;
