@@ -21,6 +21,8 @@ Multichar_Symbols
 
 %<attr%> ! for na adjectives
 
+%<pref%> ! prefix
+
 %<emot%> ! emoticon
 
 ! Particles
@@ -115,6 +117,8 @@ Digits ;
 Numbers ;
 
 Emoticon ;
+
+Prefix ;
 
 Punctuation ;
 
@@ -7557,6 +7561,98 @@ LEXICON Emoticon
 彡＾＿＾レ%<emot%>:彡＾＿＾レ # ;
 彡＾＿＾彡%<emot%>:彡＾＿＾彡 # ;
 彡（。：）%<emot%>:彡（。：） # ;
+
+LEXICON Prefix
+再%<pref%>:再 # ;
+準%<pref%>:準 # ;
+新%<pref%>:新 # ;
+旧%<pref%>:旧 # ;
+超%<pref%>:超 # ;
+高%<pref%>:高 # ;
+低%<pref%>:低 # ;
+猛%<pref%>:猛 # ;
+全%<pref%>:全 # ;
+現%<pref%>:現 # ;
+前%<pref%>:前 # ;
+元%<pref%>:元 # ;
+故%<pref%>:故 # ;
+好%<pref%>:好 # ;
+長%<pref%>:長 # ;
+短%<pref%>:短 # ;
+諸%<pref%>:諸 # ;
+被%<pref%>:被 # ;
+御%<pref%>:御 # ;
+ご%<pref%>:ご # ;
+お%<pref%>:お # ;
+み%<pref%>:み # ;
+す%<pref%>:す # ;
+真%<pref%>:真 # ;
+ま%<pref%>:ま # ;
+真っ%<pref%>:真っ # ;
+まっ%<pref%>:まっ # ;
+真ん%<pref%>:真ん # ;
+まん%<pref%>:まん # ;
+大%<pref%>:大 # ;
+大%<pref%>:大 # ;
+おお%<pref%>:おお # ;
+中%<pref%>:中 # ;
+小%<pref%>:小 # ;
+両%<pref%>:両 # ;
+本%<pref%>:本 # ;
+第%<pref%>:第 # ;
+約%<pref%>:約 # ;
+まる%<pref%>:まる # ;
+同%<pref%>:同 # ;
+各%<pref%>:各 # ;
+ひと%<pref%>:ひと # ;
+今%<pref%>:今 # ;
+来%<pref%>:来 # ;
+最%<pref%>:最 # ;
+他%<pref%>:他 # ;
+初%<pref%>:初 # ;
+副%<pref%>:副 # ;
+名%<pref%>:名 # ;
+昨%<pref%>:昨 # ;
+毎%<pref%>:毎 # ;
+翌%<pref%>:翌 # ;
+実%<pref%>:実 # ;
+主%<pref%>:主 # ;
+総%<pref%>:総 # ;
+プレ%<pref%>:プレ # ;
+うち%<pref%>:うち # ;
+とり%<pref%>:とり # ;
+ぶち%<pref%>:ぶち # ;
+ぶっ%<pref%>:ぶっ # ;
+ブッ%<pref%>:ブッ # ;
+かっ%<pref%>:かっ # ;
+カッ%<pref%>:カッ # ;
+ふっ%<pref%>:ふっ # ;
+フッ%<pref%>:フッ # ;
+ぶん%<pref%>:ぶん # ;
+相%<pref%>:相 # ;
+あい%<pref%>:あい # ;
+真%<pref%>:真 # ;
+ま%<pref%>:ま # ;
+真っ%<pref%>:真っ # ;
+まっ%<pref%>:まっ # ;
+御%<pref%>:御 # ;
+お%<pref%>:お # ;
+こ%<pref%>:こ # ;
+か%<pref%>:か # ;
+超%<pref%>:超 # ;
+無%<pref%>:無 # ;
+不%<pref%>:不 # ;
+非%<pref%>:非 # ;
+未%<pref%>:未 # ;
+超%<pref%>:超 # ;
+最%<pref%>:最 # ;
+御%<pref%>:御 # ;
+お%<pref%>:お # ;
+ご%<pref%>:ご # ;
+真%<pref%>:真 # ;
+ま%<pref%>:ま # ;
+真っ%<pref%>:真っ # ;
+まっ%<pref%>:まっ # ;
 
 LEXICON Punctuation
 。%<sent%>:。 # ;
