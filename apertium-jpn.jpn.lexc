@@ -425,6 +425,14 @@ LEXICON NounRoot
 マルチスレッド:マルチスレッド NounTag ; ! multi thread
 記事:記事 NounTag ; ! きじ article
 参考:参考 NounTag ; ! さんこう reference
+の:の NounTag ;
+ん:ん NounTag ;
+こと:こと NounTag ;
+はず:はず NounTag ;
+わけ:わけ NounTag ;
+つもり:つもり NounTag ;
+もの:もの NounTag ;
+もん:もん NounTag ;
 
 LEXICON ProperNouns
 日本:日本 NPTop ; ! Japan
