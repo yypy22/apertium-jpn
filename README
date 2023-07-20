@@ -62,6 +62,10 @@ TODO: test tagger result
 For now 
 $ echo "TODO: test sentence" | python3 tokenize.py | hfst-proc jpn.automorf.hfst
 $ echo "TODO: test sentence" | python3 tokenize.py | hfst-proc jpn.automorf.hfst | cg-proc -w jpn.rlx.bin
+Or
+$ g++ `mecab-config --cflags` buffer_mecab.cpp  `mecab-config --libs`
+$ ./a.out | hfst-proc jpn.automorf.hfst
+$ echo "TODO: test sentence"
 
 Files and data
 ===============================================================================
