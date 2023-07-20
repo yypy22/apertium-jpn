@@ -25,6 +25,8 @@ Multichar_Symbols
 
 %<emot%> ! emoticon
 
+%<spec%> ! special
+
 ! Particles
 %<tpc%> ! Topic
 %<nom%>  ! Nominative
@@ -117,6 +119,8 @@ Digits ;
 Numbers ;
 
 Emoticon ;
+
+Special ;
 
 Prefix ;
 
@@ -7663,6 +7667,165 @@ LEXICON Emoticon
 彡＾＿＾レ%<emot%>:彡＾＿＾レ # ;
 彡＾＿＾彡%<emot%>:彡＾＿＾彡 # ;
 彡（。：）%<emot%>:彡（。：） # ;
+
+LEXICON Special 
+．%<spec%>:． # ;
+。%<spec%>:。 # ;
+，%<spec%>:， # ;
+、%<spec%>:、 # ;
+（%<spec%>:（ # ;
+〔%<spec%>:〔 # ;
+［%<spec%>:［ # ;
+｛%<spec%>:｛ # ;
+〈%<spec%>:〈 # ;
+＜%<spec%>:＜ # ;
+《%<spec%>:《 # ;
+「%<spec%>:「 # ;
+『%<spec%>:『 # ;
+【%<spec%>:【 # ;
+“%<spec%>:“ # ;
+）%<spec%>:） # ;
+〕%<spec%>:〕 # ;
+］%<spec%>:］ # ;
+｝%<spec%>:｝ # ;
+〉%<spec%>:〉 # ;
+＞%<spec%>:＞ # ;
+》%<spec%>:》 # ;
+」%<spec%>:」 # ;
+』%<spec%>:』 # ;
+】%<spec%>:】 # ;
+”%<spec%>:” # ;
+・%<spec%>:・ # ;
+：%<spec%>:： # ;
+；%<spec%>:； # ;
+？%<spec%>:？ # ;
+！%<spec%>:！ # ;
+゛%<spec%>:゛ # ;
+゜%<spec%>:゜ # ;
+´%<spec%>:´ # ;
+｀%<spec%>:｀ # ;
+¨%<spec%>:¨ # ;
+＾%<spec%>:＾ # ;
+￣%<spec%>:￣ # ;
+＿%<spec%>:＿ # ;
+ヽ%<spec%>:ヽ # ;
+ヾ%<spec%>:ヾ # ;
+ゝ%<spec%>:ゝ # ;
+ゞ%<spec%>:ゞ # ;
+〃%<spec%>:〃 # ;
+仝%<spec%>:仝 # ;
+々%<spec%>:々 # ;
+々々%<spec%>:々々 # ;
+〆%<spec%>:〆 # ;
+〇%<spec%>:〇 # ;
+―%<spec%>:― # ;
+‐%<spec%>:‐ # ;
+／%<spec%>:／ # ;
+＼%<spec%>:＼ # ;
+〜%<spec%>:〜 # ;
+‖%<spec%>:‖ # ;
+｜%<spec%>:｜ # ;
+…%<spec%>:… # ;
+‥%<spec%>:‥ # ;
+＋%<spec%>:＋ # ;
+−%<spec%>:− # ;
+±%<spec%>:± # ;
+×%<spec%>:× # ;
+÷%<spec%>:÷ # ;
+＝%<spec%>:＝ # ;
+≠%<spec%>:≠ # ;
+∞%<spec%>:∞ # ;
+∴%<spec%>:∴ # ;
+♂%<spec%>:♂ # ;
+♀%<spec%>:♀ # ;
+′%<spec%>:′ # ;
+″%<spec%>:″ # ;
+￥%<spec%>:￥ # ;
+＄%<spec%>:＄ # ;
+¢%<spec%>:¢ # ;
+£%<spec%>:£ # ;
+＃%<spec%>:＃ # ;
+＆%<spec%>:＆ # ;
+＊%<spec%>:＊ # ;
+＠%<spec%>:＠ # ;
+§%<spec%>:§ # ;
+☆%<spec%>:☆ # ;
+★%<spec%>:★ # ;
+○%<spec%>:○ # ;
+●%<spec%>:● # ;
+◎%<spec%>:◎ # ;
+◇%<spec%>:◇ # ;
+◆%<spec%>:◆ # ;
+□%<spec%>:□ # ;
+■%<spec%>:■ # ;
+△%<spec%>:△ # ;
+▲%<spec%>:▲ # ;
+▽%<spec%>:▽ # ;
+▼%<spec%>:▼ # ;
+※%<spec%>:※ # ;
+〒%<spec%>:〒 # ;
+♪%<spec%>:♪ # ;
+→%<spec%>:→ # ;
+←%<spec%>:← # ;
+↑%<spec%>:↑ # ;
+↓%<spec%>:↓ # ;
+’%<spec%>:’ # ;
+‘%<spec%>:‘ # ;
+％%<spec%>:％ # ;
+――%<spec%>:―― # ;
+……%<spec%>:…… # ;
+Ａ%<spec%>:Ａ # ;
+ａ%<spec%>:ａ # ;
+Ｂ%<spec%>:Ｂ # ;
+ｂ%<spec%>:ｂ # ;
+Ｃ%<spec%>:Ｃ # ;
+ｃ%<spec%>:ｃ # ;
+Ｄ%<spec%>:Ｄ # ;
+ｄ%<spec%>:ｄ # ;
+Ｅ%<spec%>:Ｅ # ;
+ｅ%<spec%>:ｅ # ;
+Ｆ%<spec%>:Ｆ # ;
+ｆ%<spec%>:ｆ # ;
+Ｇ%<spec%>:Ｇ # ;
+ｇ%<spec%>:ｇ # ;
+Ｈ%<spec%>:Ｈ # ;
+ｈ%<spec%>:ｈ # ;
+Ｉ%<spec%>:Ｉ # ;
+ｉ%<spec%>:ｉ # ;
+Ｊ%<spec%>:Ｊ # ;
+ｊ%<spec%>:ｊ # ;
+Ｋ%<spec%>:Ｋ # ;
+ｋ%<spec%>:ｋ # ;
+Ｌ%<spec%>:Ｌ # ;
+ｌ%<spec%>:ｌ # ;
+Ｍ%<spec%>:Ｍ # ;
+ｍ%<spec%>:ｍ # ;
+Ｎ%<spec%>:Ｎ # ;
+ｎ%<spec%>:ｎ # ;
+Ｏ%<spec%>:Ｏ # ;
+ｏ%<spec%>:ｏ # ;
+Ｐ%<spec%>:Ｐ # ;
+ｐ%<spec%>:ｐ # ;
+Ｑ%<spec%>:Ｑ # ;
+ｑ%<spec%>:ｑ # ;
+Ｒ%<spec%>:Ｒ # ;
+ｒ%<spec%>:ｒ # ;
+Ｓ%<spec%>:Ｓ # ;
+ｓ%<spec%>:ｓ # ;
+Ｔ%<spec%>:Ｔ # ;
+ｔ%<spec%>:ｔ # ;
+Ｕ%<spec%>:Ｕ # ;
+ｕ%<spec%>:ｕ # ;
+Ｖ%<spec%>:Ｖ # ;
+ｖ%<spec%>:ｖ # ;
+Ｗ%<spec%>:Ｗ # ;
+ｗ%<spec%>:ｗ # ;
+Ｘ%<spec%>:Ｘ # ;
+ｘ%<spec%>:ｘ # ;
+Ｙ%<spec%>:Ｙ # ;
+ｙ%<spec%>:ｙ # ;
+Ｚ%<spec%>:Ｚ # ;
+ｚ%<spec%>:ｚ # ;
 
 LEXICON Prefix
 再%<pref%>:再 # ;
