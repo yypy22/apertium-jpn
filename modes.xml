@@ -73,5 +73,14 @@
     </pipeline>
   </mode>
 
-</modes>
+  <mode name="jpn-segment" install="yes">
+  <!--Added segment mode with tokenize.py and it lets us to use apertium -d . jpn-segment command-->
+    <pipeline>
+      <program name="python3">
+        <file name="tokenize.py"/>
+        <file name="jpn.autotok.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
 
+</modes>
