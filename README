@@ -65,7 +65,7 @@ $ echo "TODO: test sentence" | apertium -d . jpn-segment | hfst-proc jpn.automor
 Or
 $ g++ `mecab-config --cflags` buffer_mecab.cpp  `mecab-config --libs`
 $ ./a.out | hfst-proc jpn.automorf.hfst
-$ echo "TODO: test sentence"
+$ "TODO: test sentence"
 
 Files and data
 ===============================================================================
