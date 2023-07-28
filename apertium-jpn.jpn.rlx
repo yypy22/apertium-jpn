@@ -14,6 +14,11 @@ SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 # If cm is after the verb and noun tag, select verb
 SELECT (v) IF (1 ("、")) ;
 
+# Noun with People or verb with People
+SELECT (suff) IF (-1 (pn)) ;
+
+SELECT (n) IF (-1 (v))(1 (suff)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
