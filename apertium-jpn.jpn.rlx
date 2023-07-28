@@ -11,6 +11,9 @@ REMOVE (n) OR (v) IF (1 (n s)) ;
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
+# n + 人 or v + 人 e.g. アメリカ人, 走る人
+SELECT (n) IF (-1("<する>"))(1("<は>")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
