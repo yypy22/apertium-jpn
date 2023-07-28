@@ -11,6 +11,9 @@ REMOVE (n) OR (v) IF (1 (n s)) ;
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
+# If cm is after the verb and noun tag, select verb
+SELECT (v) IF (1 ("、")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
