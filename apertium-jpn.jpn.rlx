@@ -19,6 +19,17 @@ SELECT (suff) IF (-1 (pn)) ;
 
 SELECT (n) IF (-1 (v))(1 (suff)) ;
 
+# verb si or suff si
+SELECT (v) IF (-1 (n))(1 (suff)) ;
+
+# adv or adj
+REMOVE (adv) IF (1 (n)) ;
+
+REMOVE (adj) IF (1 ("なかっ")) ;
+
+# pref or suff 
+SELECT (pref) IF (1 (n)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
