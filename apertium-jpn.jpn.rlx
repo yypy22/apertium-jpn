@@ -33,6 +33,9 @@ SELECT (pref) IF (1 (n)) ;
 # simau is verb with te in front of it 
 SELECT (v) IF (-1 ("て")) ;
 
+#madarana 
+SELECT (adj) IF (1 ("な")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
