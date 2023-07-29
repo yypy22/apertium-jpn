@@ -30,6 +30,9 @@ REMOVE (adj) IF (1 ("なかっ")) ;
 # pref or suff 
 SELECT (pref) IF (1 (n)) ;
 
+# simau is verb with te in front of it 
+SELECT (v) IF (-1 ("て")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
