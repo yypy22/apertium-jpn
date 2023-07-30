@@ -39,6 +39,12 @@ SELECT (adj) IF (1 ("な")) ;
 #ni me ga choose noun, not suffix
 SELECT (n) IF (-1 ("に"))(1 (suff)) ;
 
+# kara with noun
+SELECT (suff) IF (-1 (n))(0 ("から")) ;
+
+# doko choose det with ga
+SELECT (det) IF (-1 ("、"))(1 (suff)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
