@@ -94,6 +94,14 @@ SELECT (v ifml npst) IF (-1 (v))(2 (v)) ;
 
 SELECT (v ifml npst) IF (-2 (n))(2 (v)) ;
 
+#ie noun or suff
+SELECT (suff) IF (-1 (pn)) ;
+
+SELECT (n) IF (0 ("家"))(-2 (n)) ;
+
+# sa verb with se verb 
+SELECT (v) IF (-1 (v))(1 (v))(2 (suff)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
