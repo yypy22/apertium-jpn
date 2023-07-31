@@ -45,6 +45,9 @@ SELECT (suff) IF (-1 (n))(0 ("から")) ;
 # doko choose det with ga
 SELECT (det) IF (-1 ("、"))(1 (suff)) ;
 
+# adj with de
+SELECT (adj) IF (1 ("で")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
