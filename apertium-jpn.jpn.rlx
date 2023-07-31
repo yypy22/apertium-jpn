@@ -17,7 +17,7 @@ SELECT (v) IF (1 ("、")) ;
 # Noun with People or verb with People
 SELECT (suff) IF (-1 (pn)) ;
 
-SELECT (n) IF (-1 (v))(1 (suff)) ;
+#SELECT (n) IF (-1 (v))(1 (suff)) ;
 
 # verb si or suff si
 SELECT (v) IF (-1 (n))(1 (suff)) ;
@@ -61,6 +61,38 @@ SELECT (suff) IF (-1 (num))(-1 (adj))(0 ("目")) ;
 
 # teki with N
 SELECT (suff) IF (-1 (n))(0 ("的")) ;
+
+# aru verb or suffix
+SELECT (v) IF (-1 ("が"))(0 ("ある")) ;
+
+SELECT (suff) IF (0 ("ある")) ;
+
+# ie with no 
+SELECT (n) IF (-1 ("の"))(-2 (n)) ;
+
+# usages in iki
+SELECT (v) IF (0 ("いき")) ;
+
+#masi with suff 
+SELECT (v) IF (0 ("まし")) ;
+
+# nai with ni 
+REMOVE (suff) IF (-1 ("に"))(0 ("ない"))(1 ("の")) ;
+
+REMOVE (v) IF (-1 ("に"))(0 ("ない"))(1 ("の")) ;
+
+# jodousi nai with words ending with a, mizen form 
+SELECT (v) IF (-1 ("わから")) ;
+
+SELECT (v) IF (-1 ("知ら")) ;
+
+#naru verv 
+SELECT (v) IF (0 ("なっ")) ;
+
+#you ni and sou ni They r jodousi verbs
+SELECT (v ifml npst) IF (-1 (v))(2 (v)) ;
+
+SELECT (v ifml npst) IF (-2 (n))(2 (v)) ;
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
