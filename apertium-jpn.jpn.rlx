@@ -48,6 +48,20 @@ SELECT (det) IF (-1 ("、"))(1 (suff)) ;
 # adj with de
 SELECT (adj) IF (1 ("で")) ;
 
+# o with verb 
+SELECT (pref) IF (1 (v)) ;
+
+# n or suff after Number
+SELECT (suff) IF (-1 (num)) ;
+
+# me with ga
+SELECT (n) IF (1 ("が"))(0 ("目")) ;
+
+SELECT (suff) IF (-1 (num))(-1 (adj))(0 ("目")) ;
+
+# teki with N
+SELECT (suff) IF (-1 (n))(0 ("的")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
