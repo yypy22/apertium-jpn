@@ -11,9 +11,6 @@ REMOVE (n) OR (v) IF (1 (n s)) ;
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
-# If cm is after the verb and noun tag, select verb
-SELECT (v) IF (1 ("、")) ;
-
 # Noun with People or verb with People
 SELECT (suff) IF (-1 (pn)) ;
 
@@ -122,6 +119,20 @@ SELECT (v) IF (0 ("し"))(-1 (suff))(1 (suff)) ;
 SELECT (v) IF (0 ("し"))(-1 (n)) ;
 
 SELECT (n) IF (0 ("大橋"))(-1 (n)) ;
+
+SELECT (adv) IF (0 ("また"))(1 (cm)) ;
+
+SELECT (v) IF (-2 (n))(0 ("つい"))(1 ("て")) ;
+
+SELECT (suff) IF (0 ("月"))(-1 (num)) ;
+
+SELECT (v) IF (0 ("得"))(1 ("られる")) ;
+
+SELECT (n) IF (0 ("金"))(-1 (n)) ;
+
+SELECT (pn) IF (0 ("金"))(1 (pn)) ;
+
+SELECT (adv) IF (0 ("さらに")) ;
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
