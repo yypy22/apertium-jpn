@@ -105,6 +105,24 @@ SELECT (v) IF (-1 (v))(1 (v))(2 (suff)) ;
 # to naru 
 SELECT (v) IF (-1 (suff))(0 ("なる")) ;
 
+# sono 
+SELECT (det) IF (0 ("その")) ;
+
+# muke v
+SELECT (suff) IF (0 ("向け")) ;
+
+SELECT (suff) IF (0 ("者"))(-1 (n)) ;
+
+SELECT (v) IF (0 ("よる"))(-1 ("に")) ;
+
+SELECT (suff) IF (0 ("市"))(-1 (n)) ;
+
+SELECT (v) IF (0 ("し"))(-1 (suff))(1 (suff)) ;
+
+SELECT (v) IF (0 ("し"))(-1 (n)) ;
+
+SELECT (n) IF (0 ("大橋"))(-1 (n)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
