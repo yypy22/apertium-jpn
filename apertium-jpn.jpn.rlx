@@ -134,6 +134,10 @@ SELECT (pn) IF (0 ("金"))(1 (pn)) ;
 
 SELECT (adv) IF (0 ("さらに")) ;
 
+SELECT (v) IF (0 ("題し")) ;
+
+SELECT (n) IF (0 ("樹"))(-1 (n)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
