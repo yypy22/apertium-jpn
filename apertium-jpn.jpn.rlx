@@ -102,6 +102,9 @@ SELECT (n) IF (0 ("家"))(-2 (n)) ;
 # sa verb with se verb 
 SELECT (v) IF (-1 (v))(1 (v))(2 (suff)) ;
 
+# to naru 
+SELECT (v) IF (-1 (suff))(0 ("なる")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
