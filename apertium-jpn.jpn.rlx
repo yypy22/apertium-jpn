@@ -142,6 +142,10 @@ SELECT (pref) IF (-1 ("卒業"))(1 ("めでとう")) ;
 
 SELECT (adj) IF (0 ("ほんと")) ;
 
+SELECT (suff) IF (0 ("末"))(-1 (n)) ;
+
+SELECT (v) IF (0 ("あっ"))(1 (suff)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
