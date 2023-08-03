@@ -146,6 +146,12 @@ SELECT (suff) IF (0 ("末"))(-1 (n)) ;
 
 SELECT (v) IF (0 ("あっ"))(1 (suff)) ;
 
+SELECT (suff) IF (0 ("後"))(-1 (det)) ;
+
+SELECT (adj) IF (0 ("主に")) ;
+
+SELECT (v) IF (0 ("する"))(-1 (n)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
