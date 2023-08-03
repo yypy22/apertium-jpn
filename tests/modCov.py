@@ -45,6 +45,7 @@ def tokenize(corpusPath):
     pipeline([
         [catCommands[corpusType], corpusPath],
         ['apertium-destxt'],
+        ['apertium -d . jpn-segment'],
         ['lt-proc', '-w', args.automorfPath],
         ['apertium-retxt'],
         ['sed', r's/\$\W*\^/$\n^/g']
