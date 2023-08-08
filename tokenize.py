@@ -6,27 +6,27 @@ def process_text(sin, sout):
     mecab = MeCab.Tagger("-Owakati")
     buffer = ""
     tokenized = ""
-    in_blancket = False
+    in_bracket = False
 
-    for i in text:
-        buffer += i
-        if i == text[-1]:
-            buffer = mecab.parse(buffer.strip()).rstrip()
-            tokenized += buffer
-
-        if i == "[":
-            buffer = buffer[:-1]
-            buffer = mecab.parse(buffer.strip()).rstrip()
-            tokenized += buffer
+    for char in text:
+        if char == "[":
+            if buffer.strip():
+                tokenized += mecab.parse(buffer.strip()).rstrip() + ' '
+            tokenized += '['
             buffer = ""
-            in_blancket = True
+            in_bracket = True
+        elif char == "]":
+            if in_bracket:
+                tokenized += ''.join(mecab.parse(buffer.strip()).split()) + ']'
+                buffer = ""
+            in_bracket = False
+        else:
+            buffer += char
 
-        if in_blancket:
-            tokenized += i
+    if buffer.strip():
+        tokenized += mecab.parse(buffer.strip()).rstrip()
 
-        if i == "]":
-            in_blancket = False
-            buffer = ""
     sout.write(tokenized)
+
 if __name__ == '__main__':
     process_text(sys.stdin, sys.stdout)

@@ -59,15 +59,14 @@
   <mode name="jpn-disam" install="yes">
     <pipeline>
     <!-- Using tokenizer written in python3 -->
-    <program name="python3">
+      <program name="python3">
         <file name="tokenize.py"/>
         <file name="jpn.autotok.hfst"/>
       </program>
-      <program name="lt-proc -w">
-        <file name="jpn.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="jpn.automorf.hfst"/>
       </program>
-      <program name="cg-conv -a"/>
-      <program name="vislcg3 --trace --grammar">
+      <program name="cg-proc -w">
         <file name="jpn.rlx.bin"/>
       </program>
     </pipeline>
