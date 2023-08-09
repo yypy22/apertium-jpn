@@ -152,6 +152,16 @@ SELECT (adj) IF (0 ("主に")) ;
 
 SELECT (v) IF (0 ("する"))(-1 (n)) ;
 
+SELECT (suff) IF (0 ("で"))(-1 (n)) ;
+
+SELECT (n) IF (0 ("ため"))(-1 (v)) ;
+
+SELECT (pref) IF (0 ("約"))(1 (num)) ;
+
+SELECT (suff) IF (0 ("ドル"))(-1 (suff)) ;
+
+SELECT (suff) IF (-1 (suff))(-2 (num)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
