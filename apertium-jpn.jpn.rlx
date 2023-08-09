@@ -162,6 +162,8 @@ SELECT (suff) IF (0 ("ドル"))(-1 (suff)) ;
 
 SELECT (suff) IF (-1 (suff))(-2 (num)) ;
 
+SELECT (cnjcoo) IF (0 ("しかし"))(1 (cm)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
