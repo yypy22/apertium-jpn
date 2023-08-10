@@ -59,10 +59,7 @@ TODO: test analysis result
 $ echo "TODO: test sentence" | apertium -d . jpn-tagger
 TODO: test tagger result
 
-For now 
-$ echo "TODO: test sentence" | apertium -d . jpn-segment | hfst-proc jpn.automorf.hfst
-$ echo "TODO: test sentence" | apertium -d . jpn-segment | hfst-proc jpn.automorf.hfst | cg-proc -w jpn.rlx.bin
-Or
+For C++, 
 $ g++ `mecab-config --cflags` buffer_mecab.cpp  `mecab-config --libs`
 $ ./a.out | hfst-proc jpn.automorf.hfst
 $ "TODO: test sentence"
