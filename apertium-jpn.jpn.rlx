@@ -164,6 +164,18 @@ SELECT (suff) IF (-1 (suff))(-2 (num)) ;
 
 SELECT (cnjcoo) IF (0 ("しかし"))(1 (cm)) ;
 
+SELECT (v) IF (0 ("する"))(-1 (suff))(1 (n)) ;
+
+SELECT (adj) IF (0 ("よく"))(1 (v)) ;
+
+SELECT (suff) IF (0 ("で"))(-1 (v))(1 (v)) ;
+
+SELECT (adj) IF (0 ("ない"))(1 (sent)) ;
+
+SELECT (suff) IF (0 ("で"))(-1 (n))(1 (n)) ;
+
+SELECT (v) IF (0 ("いる"))(1 (sent))(-1 (suff)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
