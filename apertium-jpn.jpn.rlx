@@ -176,6 +176,10 @@ SELECT (suff) IF (0 ("で"))(-1 (n))(1 (n)) ;
 
 SELECT (v) IF (0 ("いる"))(1 (sent))(-1 (suff)) ;
 
+SELECT (suff) IF (0 ("たい"))(-1 (v)) ;
+
+SELECT (suff) IF (0 ("時"))(-1 (suff))(1 (suff)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
