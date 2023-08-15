@@ -5,7 +5,7 @@ DELIMITERS = "<.>" ;
 LIST Case = (n s) (n p) ; # A set that matches either a Noun Singular or a Noun Plural
 
 SECTION
-# If there is a singular noun to the right, I cannot be a verb or noun.
+# If there is a singular noun to the right, it cannot be a verb or noun.
 REMOVE (n) OR (v) IF (1 (n s)) ;
 
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
@@ -179,6 +179,54 @@ SELECT (v) IF (0 ("いる"))(1 (sent))(-1 (suff)) ;
 SELECT (suff) IF (0 ("たい"))(-1 (v)) ;
 
 SELECT (suff) IF (0 ("時"))(-1 (suff))(1 (suff)) ;
+
+SELECT (v) IF (0 ("し"))(1 (suff))(-1 (v)) ;
+
+SELECT (suff) IF (0 ("より"))(-1 (n)) ;
+
+SELECT (n) IF (0 ("心"))(-1 (cm)) ;
+
+SELECT (n) IF (0 ("生"))(-1 (n)) ;
+
+SELECT ("向け") IF (0 ("向け"))(1 (suff)) ;
+
+SELECT (n) IF (0 ("在"))(1 (pn)) ;
+
+SELECT (v) IF (0 ("とも"))(-1 (suff))(1 (suff)) ;
+
+SELECT (suff) IF (0 ("かつ"))(1 (n)) ;
+
+SELECT (adv) IF (0 ("すでに"))(-1 (suff)) ;
+
+SELECT (v) IF (0 ("対し"))(-1 (suff)) ;
+
+SELECT (suff) IF (0 ("せ"))(-1 (v)) ;
+
+SELECT (suff) IF ((0 (n)) OR (0 (suff))) ;
+
+SELECT (n) IF (0 ("よう"))(-1 (v)) ;
+
+SELECT (v) IF (0 ("なさ"))(-1 (suff))(1 (suff)) ;
+
+SELECT (n) IF (0 ("こう"))(1 (v)) ;
+
+SELECT (v) IF (0 ("ず"))(-1 (v)) ;
+
+SELECT (n) IF (0 ("他"))(1 (suff)) ;
+
+SELECT (v) IF (0 ("し"))(-1 (sudd)) ;
+
+SELECT (v) IF (0 ("いっ"))(-1 (suff)) ;
+
+SELECT (suff) IF (0 ("で"))(-1 (suff))(1 (suff)) ;
+
+SELECT (v) IF (0 ("さ"))(1 (suff))(-1 (suff)) ;
+
+SELECT (adj) IF (0 ("ない"))(-1 (suff))(1 (suff)) ;
+
+SELECT (n) IF (0 ("語"))(-1 (pn)) ;
+
+SELECT (suff) IF (0 ("中"))(-1 (n)) ;
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
