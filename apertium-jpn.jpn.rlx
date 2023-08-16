@@ -282,6 +282,28 @@ SELECT (suff) IF (0 ("メートル"))(-1 (num)) ;
 
 SELECT (v) IF (0 ("達し")) ;
 
+SELECT (det) IF (0 ("その")) ;
+
+SELECT (n) IF (0 ("ため"))(1 (cm)) ;
+
+SELECT (suff) IF (0 ("で"))(-1 (adj))(1 (v)) ;
+
+SELECT (v) IF (0 ("あり"))(1 (cm))(-1 (suff)) ;
+
+SELECT (suff) IF (0 ("か"))(-1 (v)) ;
+
+SELECT (suff) IF (0 ("か"))(-1 (det)) ;
+
+SELECT (det) IF (0 ("どう"))(-1 (suff)) ;
+
+SELECT (v) IF (0 ("あっ"))(1 (suff)) ;
+
+SELECT (n) IF (0 ("学"))(-1 (n))(1 (n)) ;
+
+SELECT (n) IF (0 ("者"))(-2 (n)) ;
+
+SELECT (suff) IF (0 ("年"))(-1 (num)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
