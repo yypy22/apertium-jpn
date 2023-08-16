@@ -228,6 +228,60 @@ SELECT (n) IF (0 ("語"))(-1 (pn)) ;
 
 SELECT (suff) IF (0 ("中"))(-1 (n)) ;
 
+SELECT (adj abs) IF (0 ("大きく")) ;
+
+SELECT (adv) IF (0 ("ほぼ"))(-1 (suff)) ;
+
+SELECT (v) IF (0 ("異なり"))(1 (cm)) ;
+
+SELECT (v) IF (0 ("届か"))(1 (suff)) ;
+
+SELECT (n) IF (0 ("光"))(1 (n)) ;
+
+SELECT (pref) IF (0 ("低"))(1 (n)) ;
+
+SELECT (v) IF (0 ("ある"))(-1 (suff)) ;
+
+SELECT (suff) IF (0 ("で"))(-1 (n)) ;
+
+SELECT (cnjcoo) IF (0 ("また"))(1 (cm)) ;
+
+SELECT (n) IF (0 ("可能"))(-1 (n)) ;
+
+SELECT (v) IF (0 ("さ"))(1 (suff))(-1 (n)) ;
+
+SELECT (n) IF (0 ("うち"))(-1 (suff))(1 (suff)) ;
+
+SELECT (adv) IF (0 ("ごく"))(1 (n)) ;
+
+SELECT (v) IF (0 ("過ぎ"))(-1 (suff))(1 (suff)) ;
+
+SELECT (suff) IF (0 ("ない"))(-1 (v))(1 (sent)) ;
+
+SELECT (v) IF (0 ("する"))(-1 (n)) ;
+
+SELECT (n) IF (0 ("ため"))(-1 (v)) ;
+
+SELECT (n) IF (0 ("ため"))(-1 (suff)) ;
+
+SELECT (suff) IF (0 ("ない"))(-1 (suff)) ;
+
+SELECT (suff) IF (0 ("および"))(-1 (n)) ;
+
+SELECT (v) IF (0 ("し"))(1 (suff))(-1 (n)) ;
+
+SELECT (suff) IF (0 ("いる"))(1 (sent))(-1 (suff)) ;
+
+SELECT (n) IF (0 ("面"))(-1 (n)) ;
+
+SELECT (suff) IF (0 ("割"))(-1 (num)) ;
+
+SELECT (pref) IF (0 ("約"))(1 (num)) ;
+
+SELECT (suff) IF (0 ("メートル"))(-1 (num)) ;
+
+SELECT (v) IF (0 ("達し")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
