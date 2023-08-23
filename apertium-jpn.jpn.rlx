@@ -304,6 +304,18 @@ SELECT (n) IF (0 ("者"))(-2 (n)) ;
 
 SELECT (suff) IF (0 ("年"))(-1 (num)) ;
 
+SELECT (adv) IF (0 ("せめて"))(-1 (cm)) ;
+
+SELECT (adj) IF (0 ("いい"))(-1 (suff))(1 (suff)) ;
+
+SELECT (n) IF (0 ("もと"))(-1 (suff))(1 (suff)) ;
+
+SELECT (det) IF (0 ("それ"))(1 (suff)) ;
+
+SELECT (n) IF (0 ("沢"))(-1 (adv))(1 (suff)) ;
+
+SELECT (v) IF (0 ("記し"))(-1 (suff))(1 (suff)) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
