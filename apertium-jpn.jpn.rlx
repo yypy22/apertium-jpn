@@ -316,6 +316,52 @@ SELECT (n) IF (0 ("沢"))(-1 (adv))(1 (suff)) ;
 
 SELECT (v) IF (0 ("記し"))(-1 (suff))(1 (suff)) ;
 
+SELECT (adv) IF (0 ("寒"))(-1 (suff))(1 (v)) ;
+
+SELECT (det) IF (0 ("そこ"))(1 (suff)) ;
+
+SELECT (prn) IF (0 ("自分"))(-1 (suff))(1 (suff)) ;
+
+SELECT (n) IF (0 ("話"))(-1 (det)) ;
+
+SELECT (adj) IF (0 ("いい"))(1 (n)) ;
+
+SELECT (n) IF (0 ("遠く"))(1 (suff)) ;
+
+SELECT (adv) IF (0 ("そっと"))(1 (n)) ;
+
+SELECT (adj) IF (0 ("重"))(1 (v)) ;
+
+SELECT (adj abs) IF (0 ("ありがたい")) ;
+
+SELECT (v) IF (0 ("はなし"))(-1 (cm))(1 (suff))(2 (v)) ;
+
+SELECT (det) IF (0 ("どう"))(1 (suff)) ;
+
+SELECT (n) IF (-1 (lpar))(1 (rpar)) ;
+
+SELECT (adv) IF (0 ("決して")) ;
+
+SELECT (n) IF (0 ("巻"))(-1 (num)) ;
+
+SELECT (pref) IF (0 ("実"))(-2 (det))(-1 (suff))(1 (suff)) ;
+
+SELECT (adj abs) IF (0 ("美しい")) ;
+
+SELECT (adv) IF (0 ("きっと")) ;
+
+SELECT (adj) IF (0 ("たくさん"))(-1 (adv)) ;
+
+SELECT (n) IF (0 ("けむり"))(1 (suff)) ;
+
+SELECT (v) IF (0 ("ころし"))(-1 (v))(1 (suff)) ;
+
+SELECT (v) IF (0 ("さか"))(1 (v)) ;
+
+SELECT (v ifml) IF (0 ("あわて")) ;
+
+SELECT (adj abs) IF (0 ("恐ろしい")) ;
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar
